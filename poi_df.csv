@@ -1,13 +1,703 @@
-ID,Latitude,Longitude,City,State,Population,Museum,Num of Museums,BBQ Joints,Num of BBQ Joints,Coffee Shop,Num of Coffee Shops
-22814,30.26715,-97.74306,Austin,TX,931830,Mexic-Arte Museum,32.0,Cooper's Old Time Pit Bar-B-Que,18.0,My Name Is Joe Coffee,71.0
-22847,32.78306,-96.80667,Dallas,TX,1300092,American Museum of the Miniature Arts,17.0,Sonny Bryan's Smokehouse,12.0,Starbucks,38.0
-22861,32.72541,-97.32085,Fort Worth,TX,918915,JUNETEENTH MUSEUM,31.0,No BBQ found,17.0,Cherry Coffee Shop,30.0
-22878,29.76328,-95.36327,Houston,TX,2296224,Harris County Heritage Society Museum,23.0,Pappas BBQ,19.0,Starbucks,73.0
-22939,29.42412,-98.49363,San Antonio,TX,1469845,Spanish Governor's Palace,61.0,The County Line,19.0,Commonwealth Coffeehouse,40.0
-23523,42.33143,-83.04575,Detroit,MI,677116,William V. Banks Broadcast Museum & Media Center,30.0,BB's Butcher's Inn,7.0,Roasting Plant,93.0
-24413,36.74773,-119.77237,Fresno,CA,520052,Meux Home Museum,4.0,Famous Dave's,3.0,Starbucks,13.0
-24483,34.05223,-118.24368,Los Angeles,CA,3971883,Union Center for the Arts,118.0,Kobunga Korean Grill,15.0,Blue Bottle Coffee,222.0
-24596,32.71571,-117.16472,San Diego,CA,1394928,Museum of Contemporary Art,51.0,Kansas City Barbeque,4.0,Starbucks,128.0
-24599,37.77493,-122.41942,San Francisco,CA,864816,Asian Art Museum of San Francisco,84.0,Cathead's BBQ,18.0,Blue Bottle Coffee,281.0
-24602,37.33939,-121.89496,San Jose,CA,1026908,Carmel and Thomas Fallon House,31.0,Henry’s Hi-Life,24.0,Voyager Craft Coffee,169.0
-24775,31.75872,-106.48693,El Paso,TX,681124,Insights - El Paso Science Museum,22.0,Famous Dave's,1.0,Starbucks,18.0
+ID,Latitude,Longitude,City,State,Population,Zoo,Num of Zoos,Pet Shops,Num of Pet Shops,Light Rail,Num of Light Rails
+22802,32.44874,-99.73314,Abilene,TX,121721,The Abilene Zoo,1.0,Petco,2.0,Monks Coffee,8.0
+22803,32.96179,-96.82917,Addison,TX,15518,No zoo found,0.0,PetSmart,20.0,Starbucks,76.0
+22804,26.18369,-98.12306,Alamo,TX,19246,No zoo found,0.0,PetSmart,5.0,Starbucks,7.0
+22805,29.93245,-95.38021,Aldine,TX,15869,No zoo found,0.0,Stallion's Feed and Supply,12.0,Starbucks,37.0
+22806,27.75225,-98.06972,Alice,TX,19408,No zoo found,0.0,No BBQ found,0.0,Starbucks,1.0
+22807,29.71106,-95.59633,Alief,TX,98725,No zoo found,0.0,Petco,12.0,Starbucks,55.0
+22808,33.10317,-96.67055,Allen,TX,98143,No zoo found,0.0,PetSmart,9.0,Starbucks,48.0
+22809,26.28729,-98.31335,Alton,TX,15760,National Butterfly Center,1.0,PetSmart,4.0,Starbucks,7.0
+22810,29.42385,-95.2441,Alvin,TX,25791,Bayou Safari Wildlife Park,2.0,Petco,3.0,Starbucks,4.0
+22811,29.16941,-95.43188,Angleton,TX,19429,No zoo found,0.0,PetSmart,1.0,Starbucks,1.0
+22812,32.73569,-97.10807,Arlington,TX,388125,No zoo found,0.0,PetSmart,4.0,Inclusion Coffee,19.0
+22813,29.99883,-95.1766,Atascocita,TX,65844,No zoo found,0.0,Pet Ranch,8.0,Starbucks,20.0
+22814,30.26715,-97.74306,Austin,TX,931830,No zoo found,0.0,Healthy Pet,19.0,My Name Is Joe Coffee,71.0
+22815,32.72874,-96.62277,Balch Springs,TX,25210,No zoo found,0.0,PetSmart,3.0,Starbucks,6.0
+22816,29.7355,-94.97743,Baytown,TX,76335,No zoo found,0.0,Petco,2.0,Starbucks,4.0
+22817,30.08605,-94.10185,Beaumont,TX,118129,No zoo found,0.0,No BBQ found,0.0,Starbucks,2.0
+22818,32.84402,-97.14307,Bedford,TX,49337,No zoo found,0.0,Petco,11.0,Starbucks,39.0
+22819,29.70579,-95.45883,Bellaire,TX,18518,Houston Zoo,3.0,PetSmart,19.0,Starbucks,82.0
+22820,31.05601,-97.46445,Belton,TX,20547,No zoo found,0.0,Petco,2.0,Starbucks,6.0
+22821,32.67319,-97.46058,Benbrook,TX,22629,Fort Worth Zoo,1.0,Petco,6.0,Starbucks,18.0
+22822,30.16688,-96.39774,Brenham,TX,16579,No zoo found,0.0,PetSmart,1.0,Max Donuts,2.0
+22823,25.90175,-97.49748,Brownsville,TX,183887,Gladys Porter Zoo,1.0,PetSmart,1.0,Doña Elsa,2.0
+22824,31.70932,-98.99116,Brownwood,TX,19031,No zoo found,0.0,No BBQ found,0.0,No Light Rail found,0.0
+22825,30.51353,-97.73973,Brushy Creek,TX,21764,No zoo found,0.0,Woof Gang Bakery & Grooming Cedar Park,21.0,Starbucks,41.0
+22826,30.67436,-96.36996,Bryan,TX,82118,No zoo found,0.0,PetSmart,1.0,Starbucks,10.0
+22827,32.54208,-97.32085,Burleson,TX,43625,No zoo found,0.0,PetSmart,3.0,Starbucks,10.0
+22828,29.87522,-98.26251,Canyon Lake,TX,21262,No zoo found,0.0,No BBQ found,0.0,No Light Rail found,0.0
+22829,32.95373,-96.89028,Carrollton,TX,133168,No zoo found,0.0,Rocking Y Feed & Pet,15.0,Starbucks,75.0
+22830,32.58847,-96.95612,Cedar Hill,TX,48507,No zoo found,0.0,Petco,5.0,Jessica's Tea Room,7.0
+22831,30.5052,-97.82029,Cedar Park,TX,65945,No zoo found,0.0,PetSmart,20.0,Starbucks,33.0
+22832,29.77606,-95.11465,Channelview,TX,38289,No zoo found,0.0,PetSmart,2.0,Starbucks,5.0
+22833,29.56162,-98.22696,Cibolo,TX,33433,No zoo found,0.0,No BBQ found,0.0,Emily's Place Coffee Shoppe,6.0
+22834,29.73884,-95.758,Cinco Ranch,TX,18274,No zoo found,0.0,Petco,7.0,Starbucks,25.0
+22835,32.34764,-97.38668,Cleburne,TX,30020,No zoo found,0.0,Pet Sense,1.0,Starbucks,2.0
+22836,29.77828,-95.17188,Cloverleaf,TX,22942,No zoo found,0.0,No BBQ found,0.0,Starbucks,3.0
+22837,30.62798,-96.33441,College Station,TX,107889,No zoo found,0.0,PetSmart,1.0,Starbucks,11.0
+22838,32.88096,-97.15501,Colleyville,TX,25487,No zoo found,0.0,Petco,13.0,Starbucks,42.0
+22839,30.31188,-95.45605,Conroe,TX,68602,No zoo found,0.0,Petco,7.0,Starbucks,15.0
+22840,29.51801,-98.31612,Converse,TX,21987,San Antonio Zoo,1.0,Petco,3.0,Starbucks,14.0
+22841,32.95457,-97.01501,Coppell,TX,41159,No zoo found,0.0,PetSmart,12.0,Starbucks,44.0
+22842,31.12406,-97.90308,Copperas Cove,TX,33081,No zoo found,0.0,The Pet Stop,1.0,Coffee Beanery (Drive-Thru),4.0
+22843,33.15401,-97.06473,Corinth,TX,20998,No zoo found,0.0,Pet Supermarket,5.0,Starbucks,14.0
+22844,27.80058,-97.39638,Corpus Christi,TX,324074,No zoo found,0.0,PetSmart,3.0,Coffee Waves,6.0
+22845,32.09543,-96.46887,Corsicana,TX,23952,No zoo found,0.0,No BBQ found,0.0,Timbers,1.0
+22846,29.96911,-95.69717,Cypress,TX,46025,No zoo found,0.0,PetSmart,7.0,Starbucks,22.0
+22847,32.78306,-96.80667,Dallas,TX,1300092,Dallas Zoo,2.0,Pet Supplies Plus,12.0,Starbucks,38.0
+22848,32.58986,-96.85695,DeSoto,TX,52486,No zoo found,0.0,PetSmart,4.0,Starbucks,3.0
+22849,29.70523,-95.12382,Deer Park,TX,33806,No zoo found,0.0,Pawsh Dog House,4.0,Starbucks,4.0
+22850,33.75566,-96.53666,Denison,TX,23150,No zoo found,0.0,PetSmart,2.0,Starbucks,2.0
+22851,33.21484,-97.13307,Denton,TX,131044,No zoo found,0.0,Fish n' Chirps Pet Center,4.0,Starbucks,10.0
+22852,29.46079,-95.05132,Dickinson,TX,19895,Bayou Safari Wildlife Park,2.0,PetSmart,5.0,Starbucks,13.0
+22853,26.17035,-98.05195,Donna,TX,16523,No zoo found,0.0,Petco,2.0,Starbucks,2.0
+22854,32.6518,-96.90834,Duncanville,TX,39826,Dallas Zoo,2.0,Pet Village,5.0,Starbucks,7.0
+22855,26.30174,-98.16334,Edinburg,TX,84497,No zoo found,0.0,Petco,3.0,Starbucks,7.0
+22856,32.32931,-96.62527,Ennis,TX,19007,No zoo found,0.0,No BBQ found,0.0,No Light Rail found,0.0
+22857,32.83707,-97.08195,Euless,TX,54219,No zoo found,0.0,Petco,9.0,Starbucks,37.0
+22858,32.92651,-96.89612,Farmers Branch,TX,32689,No zoo found,0.0,Rocking Y Feed & Pet,17.0,Starbucks,75.0
+22859,33.01457,-97.09696,Flower Mound,TX,71253,No zoo found,0.0,Petco,10.0,Starbucks,44.0
+22860,32.74818,-96.47193,Forney,TX,18418,No zoo found,0.0,PetSmart,1.0,Starbucks,3.0
+22861,32.72541,-97.32085,Fort Worth,TX,918915,Fort Worth Zoo,1.0,PetSmart,7.0,Cherry Coffee Shop,30.0
+22862,29.53885,-95.44744,Fresno,TX,19069,No zoo found,0.0,Natural Pawz,1.0,Starbucks,8.0
+22863,29.5294,-95.20104,Friendswood,TX,38800,Bayou Safari Wildlife Park,2.0,PetSmart,6.0,Starbucks,12.0
+22864,33.15067,-96.82361,Frisco,TX,154407,No zoo found,0.0,Petco,6.0,Summer Moon Coffee,36.0
+22865,33.62594,-97.13335,Gainesville,TX,16292,Frank Buck Zoo,1.0,No BBQ found,0.0,Starbucks,1.0
+22866,29.30135,-94.7977,Galveston,TX,50180,No zoo found,0.0,PetSmart,2.0,Red Light Coffee Roasters,5.0
+22867,32.91262,-96.63888,Garland,TX,236897,No zoo found,0.0,Roach Feed and Seed,12.0,Rosalind Coffee Company,53.0
+22868,31.43516,-97.74391,Gatesville,TX,15724,No zoo found,0.0,No BBQ found,0.0,No Light Rail found,0.0
+22869,30.63269,-97.67723,Georgetown,TX,63716,No zoo found,0.0,PetSmart,3.0,Black Sugar Caffe,17.0
+22870,32.74596,-96.99778,Grand Prairie,TX,187809,No zoo found,0.0,PetSmart,6.0,Starbucks,17.0
+22871,32.93429,-97.07807,Grapevine,TX,51404,No zoo found,0.0,Petco,11.0,Starbucks,45.0
+22872,33.13845,-96.11081,Greenville,TX,26515,No zoo found,0.0,Petco,1.0,Starbucks,1.0
+22873,29.94827,-93.91712,Groves,TX,15750,No zoo found,0.0,Petco,2.0,Starbucks,2.0
+22874,32.79957,-97.26918,Haltom City,TX,44206,Fort Worth Zoo,1.0,PetSmart,13.0,Race Street Coffee,29.0
+22875,31.08351,-97.65974,Harker Heights,TX,29142,No zoo found,0.0,Petco,2.0,Starbucks,5.0
+22876,26.19063,-97.6961,Harlingen,TX,65774,No zoo found,0.0,The Paw Pantry,2.0,Starbucks,2.0
+22877,33.09179,-97.04668,Highland Village,TX,16149,No zoo found,0.0,Petco,2.0,Starbucks,18.0
+22878,29.76328,-95.36327,Houston,TX,2296224,Cockrell Butterfly Center,3.0,PetSmart,18.0,Starbucks,73.0
+22879,29.99883,-95.26216,Humble,TX,15665,No zoo found,0.0,Petco,9.0,Starbucks,26.0
+22880,30.72353,-95.55078,Huntsville,TX,40938,No zoo found,0.0,No BBQ found,0.0,Starbucks,2.0
+22881,32.82346,-97.17057,Hurst,TX,39016,No zoo found,0.0,Petco,12.0,Starbucks,40.0
+22882,30.5427,-97.54667,Hutto,TX,22722,No zoo found,0.0,Petco,5.0,Starbucks,13.0
+22883,32.81402,-96.94889,Irving,TX,236607,Dallas Zoo,2.0,Saltwater Paradise,8.0,Starbucks,37.0
+22884,30.4427,-97.77501,Jollyville,TX,16151,No zoo found,0.0,Pet Supplies Plus,25.0,The Coffee Bean & Tea Leaf,51.0
+22885,29.78579,-95.8244,Katy,TX,16158,No zoo found,0.0,Petco,6.0,Serene Beans,19.0
+22886,32.93457,-97.25168,Keller,TX,45758,No zoo found,0.0,Petco,14.0,Starbucks,30.0
+22887,30.04743,-99.14032,Kerrville,TX,23136,No zoo found,0.0,Pet Supplies Plus,2.0,Starbucks,2.0
+22888,31.11712,-97.7278,Killeen,TX,140806,No zoo found,0.0,The Pet Stop,2.0,Starbucks,5.0
+22889,27.51587,-97.85611,Kingsville,TX,26225,No zoo found,0.0,No BBQ found,0.0,Starbucks,1.0
+22890,29.98911,-97.87723,Kyle,TX,35733,Texas Wildlife Petting Park,1.0,Petco,1.0,Kyle's Daily Grind,9.0
+22891,29.36857,-94.97131,La Marque,TX,15908,No zoo found,0.0,BoneVoyage Pet Resort,3.0,Starbucks,5.0
+22892,29.66578,-95.01937,La Porte,TX,35148,No zoo found,0.0,Petco,4.0,Starbucks,7.0
+22893,29.03386,-95.43439,Lake Jackson,TX,27533,No zoo found,0.0,PetSmart,1.0,Starbucks,1.0
+22894,32.59208,-96.75611,Lancaster,TX,38801,No zoo found,0.0,PetSmart,2.0,Starbucks,1.0
+22895,27.50641,-99.50754,Laredo,TX,255473,Zoologico de Nuevo Laredo,1.0,Petco,3.0,Starbucks,7.0
+22896,29.50745,-95.09493,League City,TX,98312,Bayou Safari Wildlife Park,2.0,Petco,5.0,Starbucks,13.0
+22897,30.57881,-97.85307,Leander,TX,37889,No zoo found,0.0,Petco,12.0,Starbucks,21.0
+22898,33.04623,-96.99417,Lewisville,TX,104039,No zoo found,0.0,Petco,8.0,Starbucks,25.0
+22899,33.16262,-96.93751,Little Elm,TX,38341,No zoo found,0.0,Petco,3.0,Starbucks,23.0
+22900,29.56523,-98.3364,Live Oak,TX,15346,Natural Bridge Wildlife Ranch,1.0,Petco,4.0,Starbucks,19.0
+22901,32.5007,-94.74049,Longview,TX,82287,No zoo found,0.0,Dog Style Canine Supply Company,3.0,Starbucks,3.0
+22902,31.33824,-94.7291,Lufkin,TX,36333,Ellen Trout Zoo,1.0,PetSmart,1.0,Standpipe Coffee House,2.0
+22903,32.56319,-97.14168,Mansfield,TX,64274,No zoo found,0.0,PetSmart,4.0,Starbucks,7.0
+22904,32.54487,-94.36742,Marshall,TX,23820,No zoo found,0.0,No BBQ found,0.0,No Light Rail found,0.0
+22905,26.20341,-98.23001,McAllen,TX,140269,National Butterfly Center,1.0,PetSmart,4.0,Starbucks,7.0
+22906,33.19762,-96.61527,McKinney,TX,162898,No zoo found,0.0,Petco,2.0,Starbucks,17.0
+22907,26.1498,-97.91361,Mercedes,TX,16657,No zoo found,0.0,Petco,1.0,Starbucks,1.0
+22908,32.7668,-96.59916,Mesquite,TX,144788,No zoo found,0.0,PetSmart,3.0,Starbucks,10.0
+22909,32.48236,-96.99445,Midlothian,TX,22318,No zoo found,0.0,Petco,2.0,Starbucks,6.0
+22910,26.21591,-98.32529,Mission,TX,83298,National Butterfly Center,1.0,Petco,3.0,Starbucks,6.0
+22911,29.69384,-95.66495,Mission Bend,TX,36501,No zoo found,0.0,PetSmart,9.0,Starbucks,34.0
+22912,29.61857,-95.53772,Missouri City,TX,74139,No zoo found,0.0,Petco,12.0,The Prairie Table,38.0
+22913,33.15679,-94.96827,Mount Pleasant,TX,16051,No zoo found,0.0,PetSense,1.0,Jo's,2.0
+22914,33.01512,-96.61305,Murphy,TX,20610,No zoo found,0.0,PetSmart,8.0,Starbucks,39.0
+22915,31.60351,-94.65549,Nacogdoches,TX,33894,No zoo found,0.0,PetSense,1.0,Java Jacks,2.0
+22916,29.97438,-93.9924,Nederland,TX,17196,No zoo found,0.0,Petco,2.0,Starbucks,2.0
+22917,29.703,-98.12445,New Braunfels,TX,70543,No zoo found,0.0,PetSmart,2.0,Starbucks,1.0
+22918,29.59412,-95.68078,New Territory,TX,15186,No zoo found,0.0,PetSmart,4.0,Starbucks,14.0
+22919,32.8343,-97.2289,North Richland Hills,TX,69204,No zoo found,0.0,PetSmart,13.0,Starbucks,33.0
+22920,30.09299,-93.73655,Orange,TX,19347,No zoo found,0.0,No BBQ found,0.0,No Light Rail found,0.0
+22921,31.76212,-95.63079,Palestine,TX,18288,No zoo found,0.0,No BBQ found,0.0,Old Magnolia Coffee Shop,3.0
+22922,33.66094,-95.55551,Paris,TX,24782,No zoo found,0.0,Petco,1.0,Starbucks,1.0
+22923,29.69106,-95.2091,Pasadena,TX,153784,No zoo found,0.0,PetSmart,2.0,Starbucks,9.0
+22924,29.56357,-95.28605,Pearland,TX,108821,No zoo found,0.0,PetSmart,3.0,Starbucks,9.0
+22925,29.62607,-95.73162,Pecan Grove,TX,15963,No zoo found,0.0,Petco,6.0,Starbucks,19.0
+22926,30.43937,-97.62,Pflugerville,TX,57122,No zoo found,0.0,Petco,13.0,Donut Palace,29.0
+22927,26.1948,-98.18362,Pharr,TX,76538,No zoo found,0.0,PetSmart,4.0,Starbucks,7.0
+22928,33.01984,-96.69889,Plano,TX,283558,No zoo found,0.0,Petco,14.0,1418 Coffeehouse,63.0
+22929,29.88519,-93.94233,Port Arthur,TX,55340,No zoo found,0.0,Petco,2.0,Starbucks,2.0
+22930,27.87725,-97.32388,Portland,TX,16116,No zoo found,0.0,No BBQ found,0.0,Starbucks,1.0
+22931,33.23623,-96.80111,Prosper,TX,15967,No zoo found,0.0,Hollywood Feed,5.0,Starbucks,21.0
+22932,32.94818,-96.72972,Richardson,TX,110815,No zoo found,0.0,Petco,23.0,Starbucks,72.0
+22933,32.93123,-96.45971,Rockwall,TX,42566,No zoo found,0.0,Petco,2.0,Starbucks,10.0
+22934,29.55718,-95.80856,Rosenberg,TX,35510,No zoo found,0.0,Petco,2.0,Starbucks,7.0
+22935,30.50826,-97.6789,Round Rock,TX,115997,No zoo found,0.0,PetSmart,19.0,Starbucks,42.0
+22936,32.9029,-96.56388,Rowlett,TX,60236,No zoo found,0.0,PetSmart,7.0,Starbucks,21.0
+22937,32.97623,-96.59527,Sachse,TX,24554,No zoo found,0.0,PetSmart,8.0,Starbucks,37.0
+22938,32.86013,-97.36391,Saginaw,TX,22079,Fort Worth Zoo,1.0,Pet Supplies Plus,10.0,Starbucks,21.0
+22939,29.42412,-98.49363,San Antonio,TX,1469845,San Antonio Zoo,1.0,Pet Wants San Antonio,6.0,Commonwealth Coffeehouse,40.0
+22940,26.13258,-97.6311,San Benito,TX,24496,No zoo found,0.0,The Paw Pantry,2.0,Starbucks,2.0
+22941,26.18924,-98.15529,San Juan,TX,36556,No zoo found,0.0,PetSmart,4.0,Starbucks,7.0
+22942,29.88327,-97.94139,San Marcos,TX,60684,Texas Wildlife Petting Park,1.0,PetSmart,2.0,Stellar Cafe,8.0
+22943,29.55217,-98.26973,Schertz,TX,43091,No zoo found,0.0,No BBQ found,0.0,Starbucks,8.0
+22944,32.63958,-96.53832,Seagoville,TX,15894,No zoo found,0.0,No BBQ found,0.0,Starbucks,1.0
+22945,29.56884,-97.96473,Seguin,TX,27864,No zoo found,0.0,Thunderpaws Canine Solutions,3.0,Seguin Coffee Company,3.0
+22946,33.63566,-96.60888,Sherman,TX,40667,No zoo found,0.0,PetSmart,2.0,Starbucks,2.0
+22947,29.66301,-95.23549,South Houston,TX,17544,Houston Zoo,1.0,PetSmart,3.0,Starbucks,9.0
+22948,32.94124,-97.13418,Southlake,TX,29941,No zoo found,0.0,PetSmart,13.0,Starbucks,46.0
+22949,30.07994,-95.41716,Spring,TX,54298,No zoo found,0.0,Natural Pawz,10.0,Starbucks,36.0
+22950,29.61607,-95.55772,Stafford,TX,18459,No zoo found,0.0,Petco,9.0,The Prairie Table,31.0
+22951,32.2207,-98.20226,Stephenville,TX,20120,No zoo found,0.0,No BBQ found,0.0,Starbucks,1.0
+22952,29.61968,-95.63495,Sugar Land,TX,88156,No zoo found,0.0,PetSmart,6.0,Blendin,18.0
+22953,33.13845,-95.60107,Sulphur Springs,TX,16098,No zoo found,0.0,No BBQ found,0.0,Starbucks,1.0
+22954,30.57076,-97.40944,Taylor,TX,16702,No zoo found,0.0,No BBQ found,0.0,Starbucks,1.0
+22955,31.09823,-97.34278,Temple,TX,72277,No zoo found,0.0,Petco,2.0,Starbucks,5.0
+22956,32.73596,-96.27526,Terrell,TX,16981,No zoo found,0.0,No BBQ found,0.0,Starbucks,2.0
+22957,33.42513,-94.04769,Texarkana,TX,37280,No zoo found,0.0,PetSmart,1.0,Starbucks,2.0
+22958,29.38385,-94.9027,Texas City,TX,47618,No zoo found,0.0,BoneVoyage Pet Resort,2.0,Starbucks,8.0
+22959,33.08901,-96.88639,The Colony,TX,41779,No zoo found,0.0,Petco,12.0,Starbucks,41.0
+22960,30.15799,-95.48938,The Woodlands,TX,93847,No zoo found,0.0,Hollywood Feed,11.0,Conduit Coffee,23.0
+22961,32.35126,-95.30106,Tyler,TX,103700,Caldwell Zoo,1.0,PetSmart,1.0,Starbucks,5.0
+22962,29.54801,-98.29112,Universal City,TX,19986,No zoo found,0.0,No BBQ found,0.0,Starbucks,9.0
+22963,32.85013,-96.80028,University Park,TX,24759,Dallas Zoo,2.0,Petco,17.0,Starbucks,59.0
+22964,29.20968,-99.78617,Uvalde,TX,16476,No zoo found,0.0,Petsense,1.0,Starbucks,1.0
+22965,28.80527,-97.0036,Victoria,TX,67574,Texas Zoo,1.0,PetSmart,1.0,Starbucks,1.0
+22966,31.54933,-97.14667,Waco,TX,132356,Cameron Park Zoo,9.0,PetSmart,2.0,Magnolia Press Coffee Co.,9.0
+22967,32.85791,-97.25474,Watauga,TX,24525,No zoo found,0.0,PetSmart,13.0,Starbucks,28.0
+22968,32.38653,-96.84833,Waxahachie,TX,33384,No zoo found,0.0,Petco,1.0,Einstein's Bros Bagels,3.0
+22969,32.7593,-97.79725,Weatherford,TX,28742,No zoo found,0.0,Pet Supplies Plus,2.0,Starbucks,4.0
+22970,26.15952,-97.99084,Weslaco,TX,39474,No zoo found,0.0,Petco,1.0,Starbucks,1.0
+22971,29.71801,-95.43383,West University Place,TX,15741,Houston Zoo,3.0,Petco,20.0,Starbucks,81.0
+22972,32.75957,-97.45835,White Settlement,TX,17077,Fort Worth Zoo,1.0,Aquarums Tropical Fish,7.0,Starbucks,19.0
+22973,33.91371,-98.49339,Wichita Falls,TX,104710,No zoo found,0.0,PetSmart,2.0,Frank & Joe's Coffee House,2.0
+22974,33.01512,-96.53888,Wylie,TX,46708,No zoo found,0.0,PetSmart,5.0,Shoemaker & Hardt,20.0
+23065,28.98276,-95.9694,Bay City,TX,17598,No zoo found,0.0,No BBQ found,0.0,No Light Rail found,0.0
+23076,42.2942,-83.30993,Inkster,MI,24672,Taylor Petting Farm,1.0,Pet Supplies Plus,17.0,Tim Hortons,62.0
+23509,41.89755,-84.03717,Adrian,MI,20691,No zoo found,0.0,Pet Supplies Plus,1.0,Tim Hortons,3.0
+23510,42.25754,-83.21104,Allen Park,MI,27425,Taylor Petting Farm,1.0,Critter Pet Shop,20.0,Biggby Coffee,75.0
+23511,42.97225,-85.95365,Allendale,MI,17579,No zoo found,0.0,Chow Hound Pet Supplies,1.0,Tim Hortons,10.0
+23512,42.27756,-83.74088,Ann Arbor,MI,117070,No zoo found,0.0,Wags to Wiskers Pet Supplies,7.0,Comet Coffee,43.0
+23513,42.68753,-83.2341,Auburn Hills,MI,22672,No zoo found,0.0,Petco,8.0,Starbucks,32.0
+23514,42.3173,-85.17816,Battle Creek,MI,51589,Binder Park Zoo,1.0,Dog Zone,1.0,Biggby Coffee,1.0
+23515,43.59447,-83.88886,Bay City,MI,33917,No zoo found,0.0,PetSmart,3.0,Starbucks,5.0
+23516,42.50309,-83.18354,Berkley,MI,15268,Detroit Zoo,1.0,PetSmart,21.0,Biggby Coffee,62.0
+23517,42.5467,-83.21132,Birmingham,MI,20857,Detroit Zoo,1.0,Teacups & Toys A Pet Boutique LLC,20.0,Starbucks Reserve,64.0
+23518,42.99947,-83.61634,Burton,MI,28788,No zoo found,0.0,Magoo's,6.0,Biggby Coffee,17.0
+23519,42.30865,-83.48216,Canton,MI,86825,No zoo found,0.0,Petco,7.0,Tim Hortons,42.0
+23520,42.58698,-82.91992,Clinton Township,MI,99753,No zoo found,0.0,Petco,8.0,Tim Hortons,24.0
+23521,42.32226,-83.17631,Dearborn,MI,95171,Taylor Petting Farm,1.0,PetSmart,25.0,Starbucks,104.0
+23522,42.33698,-83.27326,Dearborn Heights,MI,56145,Taylor Petting Farm,1.0,Pet Supplies Plus,15.0,Tim Hortons,59.0
+23523,42.33143,-83.04575,Detroit,MI,677116,Belle Isle Nature Center,1.0,Premier Pet Supply,23.0,Roasting Plant,93.0
+23524,42.73698,-84.48387,East Lansing,MI,48471,Potter Park Zoo,1.0,Petco,11.0,Foster Coffee,43.0
+23525,42.46837,-82.95547,Eastpointe,MI,32657,Belle Isle Nature Center,2.0,Petco,10.0,Tim Hortons,46.0
+23526,42.48531,-83.37716,Farmington Hills,MI,81330,No zoo found,0.0,Pristine Pets,19.0,Tim Hortons,50.0
+23527,42.46059,-83.13465,Ferndale,MI,20177,Detroit Zoo,1.0,Maestro's Dog Haus,19.0,Tim Hortons,73.0
+23528,43.01253,-83.68746,Flint,MI,98310,No zoo found,0.0,Magoo's,6.0,Starbucks,19.0
+23529,42.95947,-85.48975,Forest Hills,MI,25867,No zoo found,0.0,PetSmart,4.0,Tim Hortons,21.0
+23530,42.32559,-83.33104,Garden City,MI,26920,Taylor Petting Farm,1.0,House of Pets,17.0,Tim Hortons,62.0
+23531,42.96336,-85.66809,Grand Rapids,MI,195097,John Ball Zoo,1.0,Chow Hound Pet Supplies,10.0,Local Mocha Coffee,33.0
+23532,42.90975,-85.76309,Grandville,MI,15953,John Ball Zoo,1.0,PetSmart,8.0,Wildroast Coffee Co.,33.0
+23533,42.44365,-82.90686,Grosse Pointe Woods,MI,15762,Belle Isle Nature Center,1.0,Petco,13.0,Starbucks,31.0
+23534,42.39282,-83.04964,Hamtramck,MI,22002,Belle Isle Nature Center,2.0,3 Dogs 1 Cat,25.0,Cafe 1923,96.0
+23535,42.74698,-84.40108,Haslett,MI,19220,Potter Park Zoo,1.0,PetSmart,9.0,Starbucks,36.0
+23536,42.46254,-83.10409,Hazel Park,MI,16597,Detroit Zoo,1.0,Petco,17.0,Tim Hortons,76.0
+23537,42.78752,-86.10893,Holland,MI,33742,No zoo found,0.0,Petco,1.0,Lemonjello's,8.0
+23538,42.64059,-84.51525,Holt,MI,23973,Potter Park Zoo,1.0,Pet Supplies Plus,10.0,Biggby Coffee,41.0
+23539,42.24587,-84.40135,Jackson,MI,33133,No zoo found,0.0,Pet Supplies Plus,2.0,Jackson Coffee Company,6.0
+23540,42.90725,-85.79198,Jenison,MI,16538,John Ball Zoo,1.0,PetSmart,7.0,Biggby Coffee,31.0
+23541,42.29171,-85.58723,Kalamazoo,MI,76041,No zoo found,0.0,Wild Birds Unlimited,6.0,Starbucks,16.0
+23542,42.86947,-85.64475,Kentwood,MI,51357,John Ball Zoo,1.0,Pet Supplies Plus,8.0,Tim Hortons,30.0
+23543,42.73253,-84.55553,Lansing,MI,115056,Potter Park Zoo,1.0,Anna Belle's,11.0,Biggby Coffee,44.0
+23544,42.25059,-83.17854,Lincoln Park,MI,37012,Taylor Petting Farm,1.0,Pet Care Supplies inc.,23.0,Tim Hortons,96.0
+23545,42.36837,-83.35271,Livonia,MI,94635,No zoo found,0.0,Premier Pet Supply,16.0,Tim Hortons,55.0
+23546,42.48587,-83.1052,Madison Heights,MI,30198,Detroit Zoo,1.0,Petco,15.0,Biggby Coffee,56.0
+23547,46.54354,-87.39542,Marquette,MI,21297,No zoo found,0.0,Green Dog,2.0,Starbucks,3.0
+23548,43.61558,-84.24721,Midland,MI,42200,No zoo found,0.0,Soldan's Feeds and Pet Supplies,3.0,Biggby Coffee,4.0
+23549,41.91643,-83.39771,Monroe,MI,20092,No zoo found,0.0,PetSmart,1.0,Agua Dulce,6.0
+23550,42.59726,-82.87798,Mount Clemens,MI,16400,No zoo found,0.0,Petco,6.0,Tim Hortons,21.0
+23551,43.59781,-84.76751,Mount Pleasant,MI,26060,No zoo found,0.0,PetSmart,1.0,Biggby Coffee,6.0
+23552,43.23418,-86.24839,Muskegon,MI,38401,No zoo found,0.0,PetSmart,1.0,Aldea Coffee,7.0
+23553,43.1689,-86.26395,Norton Shores,MI,24208,No zoo found,0.0,PetSmart,2.0,Tim Hortons,9.0
+23554,42.48059,-83.47549,Novi,MI,58723,No zoo found,0.0,Petland,16.0,Starbucks,41.0
+23555,42.45948,-83.18271,Oak Park,MI,29752,Detroit Zoo,1.0,Maestro's Dog Haus,21.0,Tim Hortons,69.0
+23556,42.72226,-84.42747,Okemos,MI,21369,Potter Park Zoo,1.0,Pet Supplies Plus,9.0,Biggby Coffee,40.0
+23557,42.63892,-83.29105,Pontiac,MI,59917,No zoo found,0.0,Pet Supplies Plus,17.0,Tim Hortons,46.0
+23558,42.97086,-82.42491,Port Huron,MI,29330,No zoo found,0.0,The Petfood Warehouse,9.0,The Exquisite Corpse Coffee House,23.0
+23559,42.20115,-85.58,Portage,MI,48177,No zoo found,0.0,Pets Supplies Pluss,6.0,Starbucks,16.0
+23560,42.38337,-83.2966,Redford,MI,49936,Detroit Zoo,1.0,Chap's Feeds,19.0,Tim Hortons,59.0
+23561,42.65837,-83.14993,Rochester Hills,MI,73424,No zoo found,0.0,Petco,13.0,Tim Hortons,40.0
+23562,42.22226,-83.3966,Romulus,MI,23417,Taylor Petting Farm,1.0,PetSmart,8.0,Starbucks,38.0
+23563,42.49726,-82.93714,Roseville,MI,47637,No zoo found,0.0,PetSmart,8.0,Tim Hortons,27.0
+23564,42.48948,-83.14465,Royal Oak,MI,59008,Detroit Zoo,1.0,Royal Tropical Fish and Bird Haven,16.0,Starbucks,58.0
+23565,43.41947,-83.95081,Saginaw,MI,49347,Children's Zoo at Celebration Square,1.0,Magoo's Pet Outlet,2.0,Tim Hortons,8.0
+23566,42.67087,-83.03298,Shelby,MI,74099,No zoo found,0.0,Petco,8.0,Biggby Coffee,27.0
+23567,42.47337,-83.22187,Southfield,MI,73156,Detroit Zoo,1.0,PetSmart,24.0,Tim Hortons,63.0
+23568,42.21393,-83.19381,Southgate,MI,29293,Taylor Petting Farm,1.0,Pet Supplies Plus,17.0,Tim Hortons,64.0
+23569,42.49698,-82.88881,Saint Clair Shores,MI,59715,No zoo found,0.0,PetSmart,5.0,Tim Hortons,15.0
+23570,42.58031,-83.0302,Sterling Heights,MI,132052,Detroit Zoo,1.0,PetSmart,19.0,Tim Hortons,51.0
+23571,42.24087,-83.26965,Taylor,MI,61568,Taylor Petting Farm,1.0,Pet Supplies Plus,14.0,Tim Hortons,56.0
+23572,44.76306,-85.62063,Traverse City,MI,15218,No zoo found,0.0,Square Deal Country Store,3.0,Espresso Bay,10.0
+23573,42.13949,-83.17826,Trenton,MI,18380,Taylor Petting Farm,1.0,Wild Birds Unlimited,13.0,Tim Hortons,37.0
+23574,42.60559,-83.14993,Troy,MI,83280,Detroit Zoo,1.0,Premier Pet Supply,16.0,Starbucks,55.0
+23575,43.00141,-85.76809,Walker,MI,24647,John Ball Zoo,1.0,Chow Hound Pet Supplies,6.0,Wilderness Expressions,26.0
+23576,42.49044,-83.01304,Warren,MI,134056,Detroit Zoo,1.0,Pet Supplies Plus,17.0,Tim Hortons,51.0
+23577,42.69303,-83.41181,Waterford,MI,75737,No zoo found,0.0,Pet Supplies Plus,5.0,Tim Hortons,22.0
+23578,42.7392,-84.62081,Waverly,MI,23925,Potter Park Zoo,1.0,Soldan's Pet Supplies,9.0,Biggby Coffee,40.0
+23579,42.28143,-83.38632,Wayne,MI,17081,Taylor Petting Farm,1.0,House of Pets,12.0,Tim Hortons,48.0
+23580,42.3242,-83.40021,Westland,MI,82000,No zoo found,0.0,Petco,12.0,Starbucks,46.0
+23581,42.21421,-83.14992,Wyandotte,MI,25156,Taylor Petting Farm,1.0,Feed Rite Pet Supply,22.0,Tim Hortons,78.0
+23582,42.91336,-85.70531,Wyoming,MI,75275,John Ball Zoo,1.0,Pet Supplies Plus,9.0,Biggby Coffee,35.0
+23583,42.24115,-83.61299,Ypsilanti,MI,19945,No zoo found,0.0,Fur Ball Society,8.0,Beezy's,47.0
+24241,34.39916,-118.91815,Fillmore,CA,15548,America's Teaching Zoo,1.0,Kahoots,2.0,Starbucks,5.0
+24290,34.58277,-117.40922,Adelanto,CA,33166,No zoo found,0.0,PetSmart,1.0,Starbucks,4.0
+24291,34.14306,-118.73787,Agoura,CA,20537,No zoo found,0.0,PetSmart,17.0,Starbucks,35.0
+24292,34.13639,-118.77453,Agoura Hills,CA,20915,No zoo found,0.0,PetSmart,10.0,Starbucks,24.0
+24293,37.77099,-122.26087,Alameda,CA,78630,Oakland Zoo,1.0,Petco,43.0,Blue Dot Cafe & Coffee Bar,300.0
+24294,37.88687,-122.29775,Albany,CA,19735,No zoo found,0.0,Alpha pet supply,34.0,Starbucks,263.0
+24295,34.09529,-118.12701,Alhambra,CA,85551,Montebello Barnyard Zoo,3.0,PetSmart,21.0,Starbucks,151.0
+24296,33.56504,-117.72712,Aliso Viejo,CA,50195,Zoomars Petting Zoo,1.0,PetSmart,18.0,The Neighborhood Cup,67.0
+24297,34.18973,-118.13118,Altadena,CA,42777,Los Angeles Zoo,2.0,No BBQ found,14.0,Café de Leche,82.0
+24298,37.36605,-121.82718,Alum Rock,CA,15536,Happy Hollow Park and Zoo,1.0,Petco,27.0,Starbucks,132.0
+24299,38.17492,-122.2608,American Canyon,CA,20554,Tava's Jungleland,1.0,Petco,2.0,Starbucks,20.0
+24300,33.83529,-117.9145,Anaheim,CA,350742,Santa Ana Zoo at Prentice Park,3.0,PetSmart,27.0,Starbucks,115.0
+24301,38.70824,-121.32995,Antelope,CA,45770,Folsom City Zoo Sanctuary,1.0,Petco,14.0,Starbucks,74.0
+24302,38.00492,-121.80579,Antioch,CA,110542,No zoo found,0.0,Petco,3.0,Starbucks,9.0
+24303,34.50083,-117.18588,Apple Valley,CA,72174,No zoo found,0.0,No BBQ found,5.0,Starbucks,8.0
+24304,34.13973,-118.03534,Arcadia,CA,58408,Montebello Barnyard Zoo,1.0,PetSmart,13.0,Starbucks,77.0
+24305,35.11859,-120.59073,Arroyo Grande,CA,18108,No zoo found,0.0,Petco,2.0,Starbucks,8.0
+24306,33.86585,-118.08312,Artesia,CA,16961,Parnell Storybook Zoo,1.0,Petco,32.0,Starbucks,104.0
+24307,35.20913,-118.82843,Arvin,CA,20876,No zoo found,0.0,No BBQ found,0.0,No Light Rail found,0.0
+24308,37.69465,-122.11385,Ashland,CA,21925,Oakland Zoo,1.0,PetSmart,11.0,Starbucks,57.0
+24309,35.48942,-120.67073,Atascadero,CA,29819,Charles Paddock Zoo,1.0,Lemos Feed & Pet Supply #5,2.0,Dark Nectar Coffee,9.0
+24310,37.34772,-120.60908,Atwater,CA,29237,Applegate Zoo,1.0,Armstrong's Feed & Pet World,3.0,Starbucks,7.0
+24311,34.03612,-117.99118,Avocado Heights,CA,15411,Montebello Barnyard Zoo,2.0,Petco,15.0,Starbucks,63.0
+24312,34.13362,-117.90756,Azusa,CA,49690,No zoo found,0.0,PetSmart,12.0,Starbucks,52.0
+24313,35.37329,-119.01871,Bakersfield,CA,373640,CALM - California Living Museum,1.0,PetSmart,2.0,Starbucks,10.0
+24314,34.08529,-117.9609,Baldwin Park,CA,77071,Montebello Barnyard Zoo,1.0,Petco,13.0,Starbucks,60.0
+24315,33.92557,-116.87641,Banning,CA,30945,No zoo found,0.0,Petco,1.0,Starbucks,6.0
+24316,34.89859,-117.02282,Barstow,CA,23692,No zoo found,0.0,No BBQ found,0.0,Starbucks,3.0
+24317,34.86971,-117.05615,Barstow Heights,CA,24202,No zoo found,0.0,No BBQ found,0.0,Starbucks,3.0
+24318,38.02909,-121.96163,Bay Point,CA,21534,No zoo found,0.0,Pet Food Express,8.0,Scooter's,33.0
+24319,33.92946,-116.97725,Beaumont,CA,43811,No zoo found,0.0,Petco,1.0,Starbucks,7.0
+24320,33.97751,-118.18702,Bell,CA,36205,Montebello Barnyard Zoo,1.0,Petco,15.0,Starbucks,116.0
+24321,33.96529,-118.15146,Bell Gardens,CA,43106,Montebello Barnyard Zoo,2.0,Petco,17.0,Starbucks,103.0
+24322,33.88168,-118.11701,Bellflower,CA,78441,Parnell Storybook Zoo,2.0,Pet Shop,25.0,Starbucks,90.0
+24323,37.52021,-122.2758,Belmont,CA,27218,No zoo found,1.0,Pet Food Express,15.0,Starbucks,83.0
+24324,38.04937,-122.15858,Benicia,CA,28167,Tava's Jungleland,1.0,Sugar City Pet Supply,8.0,Starbucks,39.0
+24325,37.87159,-122.27275,Berkeley,CA,120972,No zoo found,0.0,Holistic Hound,32.0,Gold Leaf Cafe,248.0
+24326,34.07362,-118.40036,Beverly Hills,CA,34869,Los Angeles Zoo,2.0,Petco,48.0,Kelly's Coffee & Fudge Factory,295.0
+24327,34.07029,-117.39588,Bloomington,CA,23851,No zoo found,0.0,PetSmart,2.0,Starbucks,49.0
+24328,33.6103,-114.59635,Blythe,CA,19208,No zoo found,0.0,No BBQ found,0.0,Starbucks,1.0
+24329,32.80755,-116.93642,Bostonia,CA,15379,No zoo found,0.0,Petco,12.0,Starbucks,41.0
+24330,34.0339,-118.20535,Boyle Heights,CA,92785,Montebello Barnyard Zoo,3.0,Gooby,18.0,Starbucks,178.0
+24331,32.97866,-115.53027,Brawley,CA,25897,No zoo found,0.0,No BBQ found,0.0,No Light Rail found,0.0
+24332,33.91668,-117.90006,Brea,CA,41944,Parnell Storybook Zoo,1.0,Brea Tropical Fish & Pets,20.0,Corner Bakery,88.0
+24333,37.93187,-121.69579,Brentwood,CA,58968,No zoo found,0.0,PetSmart,2.0,Starbucks,5.0
+24334,33.86751,-117.99812,Buena Park,CA,83270,Parnell Storybook Zoo,1.0,PetSmart,28.0,Starbucks,126.0
+24335,34.18084,-118.30897,Burbank,CA,105319,Los Angeles Zoo,2.0,Lucky Dog Grooming,30.0,Starbucks,175.0
+24336,37.5841,-122.36608,Burlingame,CA,30459,No zoo found,1.0,Avenue Pet Salon,11.0,il piccolo cafe,65.0
+24337,34.15778,-118.63842,Calabasas,CA,23058,No zoo found,0.0,Le Chien Etc.,21.0,Starbucks,44.0
+24338,32.67895,-115.49888,Calexico,CA,40053,No zoo found,2.0,Petco,1.0,Starbucks,9.0
+24339,34.21639,-119.0376,Camarillo,CA,67608,No zoo found,0.0,No BBQ found,7.0,Element Coffee,17.0
+24340,38.66879,-120.98716,Cameron Park,CA,18228,Folsom City Zoo Sanctuary,1.0,Bark Avenue,4.0,Starbucks,11.0
+24341,37.28717,-121.94996,Campbell,CA,41117,Happy Hollow Park and Zoo,1.0,Pet Food Express,36.0,Starbucks,162.0
+24342,34.20112,-118.59814,Canoga Park,CA,60578,No zoo found,0.0,Aquarium City,23.0,Starbucks,49.0
+24343,34.42333,-118.47203,Canyon Country,CA,59530,Ducks,6.0,PetSmart,3.0,Starbucks,27.0
+24344,33.15809,-117.35059,Carlsbad,CA,114746,No zoo found,0.0,Petco,9.0,Cafe Elysa,44.0
+24345,38.61713,-121.32828,Carmichael,CA,61762,Folsom City Zoo Sanctuary,1.0,PetSmart,14.0,Starbucks,100.0
+24346,33.83141,-118.28202,Carson,CA,93281,No zoo found,0.0,Ford's Feathers,36.0,Starbucks,123.0
+24347,34.48888,-118.62287,Castaic,CA,19015,Bison,5.0,Petco,2.0,Starbucks,21.0
+24348,37.6941,-122.08635,Castro Valley,CA,61388,Oakland Zoo,1.0,Pet Food Express,14.0,Starbucks,57.0
+24349,33.77974,-116.46529,Cathedral City,CA,53826,The Living Desert,1.0,PetSmart,3.0,Starbucks,13.0
+24350,37.59493,-120.95771,Ceres,CA,47963,No zoo found,0.0,Tropical Haven,3.0,"heart +, soul",12.0
+24351,33.85835,-118.06479,Cerritos,CA,49975,Parnell Storybook Zoo,1.0,Petco,32.0,It's A Grind,117.0
+24352,34.25723,-118.6012,Chatsworth,CA,41255,Bison,5.0,Reptiles,23.0,Starbucks,54.0
+24353,39.72849,-121.83748,Chico,CA,121345,No zoo found,0.0,Petco,1.0,Starbucks,8.0
+24354,37.7966,-122.40858,Chinatown,CA,100574,Bison Paddock,2.0,Pet Central,56.0,Columbus Café & Co,300.0
+24355,34.01223,-117.68894,Chino,CA,85595,No zoo found,0.0,PetSmart,18.0,Starbucks,60.0
+24356,33.9938,-117.75888,Chino Hills,CA,78309,No zoo found,0.0,PetSmart,21.0,Starbucks,66.0
+24357,37.123,-120.26018,Chowchilla,CA,18510,No zoo found,0.0,No BBQ found,0.0,No Light Rail found,0.0
+24358,32.64005,-117.0842,Chula Vista,CA,265757,San Diego Zoo,2.0,Petco,12.0,Starbucks,123.0
+24359,38.70712,-121.28106,Citrus Heights,CA,87056,Folsom City Zoo Sanctuary,1.0,Petco,16.0,Starbucks,74.0
+24360,34.09668,-117.71978,Claremont,CA,36283,No zoo found,0.0,Petco,19.0,Le Pain Quotidien,61.0
+24361,38.95823,-122.62637,Clearlake,CA,15182,No zoo found,0.0,No BBQ found,0.0,Catfish Coffeehouse,1.0
+24362,36.82523,-119.70292,Clovis,CA,104180,Fresno Chaffee Zoo,3.0,PetSmart,1.0,Starbucks,13.0
+24363,33.6803,-116.17389,Coachella,CA,44635,No zoo found,0.0,Petco,1.0,Starbucks,6.0
+24364,36.13968,-120.36015,Coalinga,CA,16564,No zoo found,0.0,No BBQ found,0.0,No Light Rail found,0.0
+24365,34.0739,-117.31365,Colton,CA,54621,No zoo found,0.0,PetSmart,2.0,Starbucks,43.0
+24366,33.89585,-118.22007,Compton,CA,98462,No zoo found,0.0,PetSmart,33.0,Starbucks,123.0
+24367,37.97798,-122.03107,Concord,CA,128667,No zoo found,0.0,Petco,10.0,Starbucks,50.0
+24368,36.09801,-119.5604,Corcoran,CA,22477,No zoo found,0.0,No BBQ found,0.0,No Light Rail found,0.0
+24369,33.87529,-117.56644,Corona,CA,164226,No zoo found,0.0,Petco,6.0,Starbucks,28.0
+24370,32.68589,-117.18309,Coronado,CA,24812,San Diego Zoo,2.0,Bella Woof Spa,20.0,Starbucks,112.0
+24371,33.64113,-117.91867,Costa Mesa,CA,113204,Reptile Zoo,2.0,Aquatic Center,14.0,Starbucks,82.0
+24372,34.09001,-117.89034,Covina,CA,48984,No zoo found,0.0,PetSmart,12.0,Starbucks,55.0
+24373,33.96057,-118.18535,Cudahy,CA,24311,Montebello Barnyard Zoo,1.0,Petco,17.0,Starbucks,114.0
+24374,34.02112,-118.39647,Culver City,CA,39717,No zoo found,0.0,Nature Aquarium,45.0,Starbucks,287.0
+24375,37.323,-122.03218,Cupertino,CA,60572,Barron Park Donkeys,2.0,An-Jan,35.0,Starbucks Reserve,154.0
+24376,33.81696,-118.03729,Cypress,CA,49290,Parnell Storybook Zoo,1.0,PetSmart,30.0,Starbucks,129.0
+24377,37.70577,-122.46192,Daly City,CA,106562,San Francisco Zoo,2.0,Pet Food Express,36.0,Starbucks,238.0
+24378,33.46697,-117.69811,Dana Point,CA,34181,Zoomars Petting Zoo,1.0,Pets Plus,12.0,Starbucks,36.0
+24379,37.82159,-121.99996,Danville,CA,44400,Oakland Zoo,1.0,Molly's Pup-Purr-Ee,13.0,Starbucks,57.0
+24380,38.54491,-121.74052,Davis,CA,67666,No zoo found,0.0,Pet Food Express,3.0,Peet's Coffee,32.0
+24381,35.76884,-119.24705,Delano,CA,52733,No zoo found,0.0,No BBQ found,0.0,No Light Rail found,0.0
+24382,33.96173,-116.50353,Desert Hot Springs,CA,28335,No zoo found,0.0,No BBQ found,0.0,Starbucks,5.0
+24383,34.02862,-117.81034,Diamond Bar,CA,56897,No zoo found,0.0,PetSmart,19.0,The Coffee Bean & Tea Leaf,68.0
+24384,36.54328,-119.38707,Dinuba,CA,23702,No zoo found,0.0,No BBQ found,0.0,Starbucks,1.0
+24385,38.44546,-121.8233,Dixon,CA,19390,No zoo found,0.0,Pet Food Express,4.0,Starbucks,29.0
+24386,33.94001,-118.13257,Downey,CA,114219,Montebello Barnyard Zoo,2.0,Pet Shop,19.0,3rd Street Coffee,78.0
+24387,34.13945,-117.97729,Duarte,CA,21990,No zoo found,0.0,HAPPY PAWS Dog Grooming,12.0,Starbucks,72.0
+24388,37.70215,-121.93579,Dublin,CA,57721,No zoo found,0.0,Petco,13.0,Starbucks,55.0
+24389,33.89807,-118.19535,East Rancho Dominguez,CA,15135,No zoo found,0.0,PetSmart,27.0,Starbucks,105.0
+24390,33.74002,-116.93891,East Hemet,CA,17418,No zoo found,0.0,Leila's Paws Pet Services,1.0,Starbucks,3.0
+24391,34.0239,-118.17202,East Los Angeles,CA,126496,Montebello Barnyard Zoo,1.0,Gooby,19.0,Starbucks,156.0
+24392,37.46883,-122.14108,East Palo Alto,CA,29662,Barron Park Donkeys,1.0,Unleashed,23.0,Starbucks,93.0
+24393,32.79477,-116.96253,El Cajon,CA,103679,No zoo found,0.0,PetSmart,13.0,Starbucks,55.0
+24394,32.792,-115.56305,El Centro,CA,43956,No zoo found,0.0,Petco,1.0,Starbucks,5.0
+24395,37.91576,-122.31164,El Cerrito,CA,23549,No zoo found,0.0,Pet Food Express,23.0,Starbucks,171.0
+24396,38.68574,-121.08217,El Dorado Hills,CA,42108,Folsom City Zoo Sanctuary,1.0,Bark Avenue,4.0,Peet's Coffee,14.0
+24397,34.06862,-118.02757,El Monte,CA,116732,Montebello Barnyard Zoo,2.0,PetSmart,14.0,Starbucks,82.0
+24398,33.91918,-118.41647,El Segundo,CA,17037,No zoo found,0.0,PetSmart,39.0,Starbucks,185.0
+24399,38.4088,-121.37162,Elk Grove,CA,166913,No zoo found,0.0,Pet Club Food and Supply,6.0,Coffee Spot,22.0
+24400,33.03699,-117.29198,Encinitas,CA,62930,No zoo found,0.0,Petco,9.0,Better Buzz Coffee Roasters,45.0
+24401,34.15917,-118.50119,Encino,CA,44581,No zoo found,0.0,Petrock Hotel and Spa,43.0,The Coffee Bean & Tea Leaf,150.0
+24402,33.11921,-117.08642,Escondido,CA,151451,San Diego Zoo Safari Park,1.0,LLLReptile,14.0,Starbucks,40.0
+24403,38.64463,-121.27217,Fair Oaks,CA,30912,Folsom City Zoo Sanctuary,1.0,Pet Club,14.0,Fair Oaks Coffee House & Deli,76.0
+24404,38.24936,-122.03997,Fairfield,CA,112970,No zoo found,0.0,Petco,3.0,Starbucks,21.0
+24405,33.37642,-117.25115,Fallbrook,CA,30534,No zoo found,0.0,No BBQ found,0.0,Starbucks,4.0
+24406,38.49602,-121.40884,Florin,CA,47513,Sacramento Zoo,1.0,Petco,19.0,Starbucks,84.0
+24407,38.67796,-121.17606,Folsom,CA,76375,Folsom City Zoo Sanctuary,1.0,PetSmart,14.0,Peet's Coffee,59.0
+24408,34.09223,-117.43505,Fontana,CA,208393,No zoo found,0.0,Protein for Pets,5.0,The Bookmark Cafe Bar,45.0
+24409,38.67877,-121.35114,Foothill Farms,CA,33121,Folsom City Zoo Sanctuary,1.0,The Bird Shop,16.0,Starbucks,95.0
+24410,37.55855,-122.27108,Foster City,CA,33477,No zoo found,1.0,Petco,14.0,Starbucks,73.0
+24411,33.70918,-117.95367,Fountain Valley,CA,56987,Reptile Zoo,2.0,PetSmart,20.0,Starbucks,120.0
+24412,37.54827,-121.98857,Fremont,CA,232206,No zoo found,0.0,PetSmart,7.0,Starbucks,49.0
+24413,36.74773,-119.77237,Fresno,CA,520052,Fresno Chaffee Zoo,3.0,PetSmart,2.0,Starbucks,13.0
+24414,33.87029,-117.92534,Fullerton,CA,140847,Parnell Storybook Zoo,2.0,Anaheim Feed and Pet Supply,22.0,The Night Owl,108.0
+24415,38.25464,-121.29995,Galt,CA,25303,No zoo found,0.0,Petco,1.0,Starbucks,4.0
+24416,33.77391,-117.94145,Garden Grove,CA,175393,Reptile Zoo,2.0,Happy Tails,24.0,iLanet Coffee,135.0
+24417,33.88835,-118.30896,Gardena,CA,60447,No zoo found,0.0,Pets Plus,30.0,Starbucks,127.0
+24418,37.00578,-121.56828,Gilroy,CA,53231,No zoo found,0.0,PetSmart,4.0,Starbucks,9.0
+24419,34.01168,-117.48477,Glen Avon,CA,20199,No zoo found,0.0,Petco,9.0,Starbucks,66.0
+24420,34.14251,-118.25508,Glendale,CA,201020,Los Angeles Zoo,2.0,Petco,31.0,Joe & The Juice,213.0
+24421,34.13612,-117.86534,Glendora,CA,52009,No zoo found,0.0,PetSmart,11.0,Classic Coffee,50.0
+24422,34.43583,-119.82764,Goleta,CA,30944,Santa Barbara Zoological Gardens,1.0,PetSmart,4.0,Starbucks,20.0
+24423,38.76323,-121.16384,Granite Bay,CA,20402,Folsom City Zoo Sanctuary,1.0,PetSmart,11.0,Starbucks,46.0
+24424,36.3208,-121.24381,Greenfield,CA,17184,No zoo found,0.0,No BBQ found,0.0,Starbucks,2.0
+24425,33.99307,-117.96868,Hacienda Heights,CA,54038,Parnell Storybook Zoo,2.0,Bubble Dog Pet Grooming,16.0,Starbucks,66.0
+24426,36.32745,-119.64568,Hanford,CA,55659,No zoo found,0.0,PetSmart,1.0,Starbucks,3.0
+24427,33.9164,-118.35257,Hawthorne,CA,88451,No zoo found,0.0,Petco,38.0,Starbucks,168.0
+24428,37.66882,-122.0808,Hayward,CA,158289,Oakland Zoo,1.0,Pet Food Express,11.0,Peet's Coffee,53.0
+24429,33.74761,-116.97307,Hemet,CA,83861,No zoo found,0.0,Leila's Paws Pet Services,1.0,Starbucks,3.0
+24430,38.01714,-122.28858,Hercules,CA,25314,Tava's Jungleland,1.0,Pet Food Express,11.0,East Bay Coffee Co.,51.0
+24431,33.86224,-118.39952,Hermosa Beach,CA,19860,No zoo found,0.0,Ka Huelo Bakery,28.0,Starbucks,116.0
+24432,34.42639,-117.30088,Hesperia,CA,93295,No zoo found,0.0,Petco,6.0,Starbucks,13.0
+24433,34.12834,-117.20865,Highland,CA,54854,No zoo found,0.0,PetSmart,2.0,Starbucks,25.0
+24434,36.85245,-121.4016,Hollister,CA,37462,No zoo found,0.0,No BBQ found,0.0,Mars Hill Coffeehouse,3.0
+24435,34.09834,-118.32674,Hollywood,CA,167664,Los Angeles Zoo,2.0,Petco,42.0,Starbucks,260.0
+24436,33.6603,-117.99923,Huntington Beach,CA,201899,Reptile Zoo,1.0,Petco,10.0,"Sit, Stay Cafe",69.0
+24437,33.98168,-118.22507,Huntington Park,CA,59430,Montebello Barnyard Zoo,1.0,Gooby,23.0,Starbucks,158.0
+24438,32.84755,-115.56944,Imperial,CA,17095,No zoo found,0.0,Petco,1.0,Starbucks,4.0
+24439,32.58394,-117.11308,Imperial Beach,CA,27408,No zoo found,3.0,Petco,6.0,Starbucks,71.0
+24440,33.7207,-116.21677,Indio,CA,87533,The Living Desert,1.0,Petco,1.0,Starbucks,8.0
+24441,33.96168,-118.35313,Inglewood,CA,111666,No zoo found,0.0,Underwater World Enterprises,51.0,Starbucks,292.0
+24442,33.66946,-117.82311,Irvine,CA,256927,Santa Ana Zoo at Prentice Park,3.0,PetSmart,22.0,Starbucks,114.0
+24443,34.41333,-119.86097,Isla Vista,CA,23096,No zoo found,0.0,PetSmart,3.0,Starbucks,20.0
+24444,34.05779,-118.30091,Koreatown,CA,124281,Los Angeles Zoo,2.0,PetSmart,42.0,Starbucks,275.0
+24445,34.19917,-118.18785,La Cañada Flintridge,CA,20246,Los Angeles Zoo,2.0,No BBQ found,16.0,Starbucks,103.0
+24446,33.93196,-117.94617,La Habra,CA,62131,Parnell Storybook Zoo,1.0,Pet Wants,18.0,Starbucks,83.0
+24447,32.84727,-117.2742,La Jolla,CA,42808,No zoo found,0.0,PetSmart,19.0,Starbucks,87.0
+24448,32.76783,-117.02308,La Mesa,CA,60089,San Diego Zoo,2.0,Petco,24.0,Lightbulb Coffee,118.0
+24449,33.91724,-118.01201,La Mirada,CA,49520,Parnell Storybook Zoo,2.0,PetSmart,23.0,Starbucks,102.0
+24450,33.8464,-118.04673,La Palma,CA,15904,Parnell Storybook Zoo,1.0,PetSmart,31.0,It's A Grind,129.0
+24451,32.70811,-116.99725,La Presa,CA,34169,San Diego Zoo,2.0,Beast Pets,18.0,Starbucks,102.0
+24452,34.02001,-117.94951,La Puente,CA,40745,Parnell Storybook Zoo,2.0,Petco,17.0,Starbucks,64.0
+24453,33.66336,-116.31001,La Quinta,CA,40476,The Living Desert,1.0,PetSmart,2.0,Starbucks,11.0
+24454,34.10084,-117.76784,La Verne,CA,32681,No zoo found,0.0,Katie's Pet Depot,16.0,Starbucks,53.0
+24455,33.57086,-117.63561,Ladera Ranch,CA,22980,Zoomars Petting Zoo,1.0,Petco,18.0,Starbucks,52.0
+24456,37.88576,-122.11802,Lafayette,CA,25843,Oakland Zoo,1.0,Petco,29.0,No Light Rail found,141.0
+24457,38.42102,-121.42384,Laguna,CA,46621,Sacramento Zoo,1.0,Petco,13.0,Starbucks,32.0
+24458,33.54225,-117.78311,Laguna Beach,CA,23365,Zoomars Petting Zoo,1.0,PetSmart,11.0,Starbucks,68.0
+24459,33.61252,-117.71283,Laguna Hills,CA,31748,Zoomars Petting Zoo,1.0,Petco,19.0,Starbucks,79.0
+24460,33.52253,-117.70755,Laguna Niguel,CA,65806,Zoomars Petting Zoo,1.0,No BBQ found,18.0,Starbucks,50.0
+24461,33.6103,-117.72533,Laguna Woods,CA,16406,Zoomars Petting Zoo,1.0,Petco,19.0,Starbucks,79.0
+24462,33.66808,-117.32726,Lake Elsinore,CA,61981,No zoo found,0.0,Petco,4.0,Starbucks,11.0
+24463,33.64697,-117.68922,Lake Forest,CA,82492,No zoo found,0.0,John Paul Pet Salon,19.0,The Coffee Bean & Tea Leaf,71.0
+24464,32.85727,-116.92225,Lakeside,CA,20648,No zoo found,0.0,PetSmart,12.0,Kaffee Meister,31.0
+24465,33.85363,-118.13396,Lakewood,CA,81611,Parnell Storybook Zoo,1.0,Petco,27.0,Corner Bakery,92.0
+24466,35.25968,-118.91427,Lamont,CA,15120,No zoo found,0.0,PetSmart,1.0,Starbucks,3.0
+24467,34.69804,-118.13674,Lancaster,CA,161103,No zoo found,0.0,PetSmart,4.0,Olives Mediterranean Café,21.0
+24468,37.8227,-121.27661,Lathrop,CA,20866,No zoo found,0.0,Petco,2.0,Starbucks,12.0
+24469,33.88724,-118.35257,Lawndale,CA,33430,No zoo found,0.0,Petco,32.0,Starbucks,134.0
+24470,32.74255,-117.03142,Lemon Grove,CA,26709,San Diego Zoo,2.0,Beast Pets,23.0,Starbucks,128.0
+24471,36.30078,-119.78291,Lemoore,CA,25647,No zoo found,0.0,PetSmart,1.0,Starbucks,2.0
+24472,33.93807,-118.35258,Lennox,CA,22753,No zoo found,0.0,Underwater World Enterprises,46.0,Starbucks,250.0
+24473,38.89156,-121.29301,Lincoln,CA,46474,No zoo found,0.0,VIP Pets,8.0,Whistle Stop Cafe,29.0
+24474,39.12767,-121.5508,Linda,CA,17773,No zoo found,0.0,PetSmart,2.0,Java Detour,4.0
+24475,36.98356,-121.98052,Live Oak,CA,17158,No zoo found,0.0,Pet Pals Discount Pet Supplies,6.0,No Light Rail found,21.0
+24476,37.68187,-121.76801,Livermore,CA,88126,No zoo found,0.0,Concord Feed Pet & Livestock Supplies,9.0,Peet's Coffee,30.0
+24477,38.1302,-121.27245,Lodi,CA,64596,Mike Grove Zoo,1.0,Petco,7.0,Starbucks,13.0
+24478,34.04835,-117.26115,Loma Linda,CA,24045,No zoo found,0.0,PetSmart,2.0,Starbucks,37.0
+24479,33.79224,-118.31507,Lomita,CA,20785,No zoo found,0.0,Reptile Finders,28.0,No Light Rail found,91.0
+24480,34.63915,-120.45794,Lompoc,CA,44164,No zoo found,0.0,No BBQ found,0.0,South Side Coffee Company,3.0
+24481,33.76696,-118.18923,Long Beach,CA,474140,No zoo found,0.0,Pet Partners,23.0,Starbucks,78.0
+24482,37.38522,-122.11413,Los Altos,CA,30671,Barron Park Donkeys,1.0,Pet's Delight,22.0,Starbucks,105.0
+24483,34.05223,-118.24368,Los Angeles,CA,3971883,Los Angeles Zoo,3.0,Pet Project,28.0,Blue Bottle Coffee,222.0
+24484,37.05828,-120.84992,Los Banos,CA,37457,No zoo found,0.0,Petco,1.0,Starbucks,2.0
+24485,37.22661,-121.97468,Los Gatos,CA,30705,Happy Hollow Park and Zoo,1.0,Petco,28.0,Starbucks,114.0
+24486,33.93029,-118.21146,Lynwood,CA,71989,Montebello Barnyard Zoo,1.0,Petco,23.0,Starbucks,122.0
+24487,36.96134,-120.06072,Madera,CA,64208,No zoo found,0.0,No BBQ found,0.0,Starbucks,5.0
+24488,33.88474,-118.41091,Manhattan Beach,CA,35818,No zoo found,0.0,Just Food For Dogs,32.0,Starbucks,141.0
+24489,37.79743,-121.21605,Manteca,CA,75448,No zoo found,0.0,PetSmart,2.0,Starbucks,10.0
+24490,36.6844,-121.80217,Marina,CA,21229,No zoo found,0.0,PetSmart,7.0,Starbucks,24.0
+24491,38.01937,-122.13413,Martinez,CA,38137,No zoo found,0.0,No BBQ found,12.0,Barrelista Coffee House,59.0
+24492,33.98668,-118.18535,Maywood,CA,27888,Montebello Barnyard Zoo,1.0,Petco,15.0,Starbucks,118.0
+24493,33.83335,-117.29615,Mead Valley,CA,18510,giraffe,1.0,Petco,3.0,Starbucks,15.0
+24494,33.72835,-117.14642,Menifee,CA,87174,No zoo found,0.0,Petco,1.0,Starbucks,9.0
+24495,37.45383,-122.18219,Menlo Park,CA,33449,Barron Park Donkeys,1.0,Bow Wow Meow,19.0,Philz Coffee,81.0
+24496,37.30216,-120.48297,Merced,CA,82436,Applegate Zoo,1.0,PetSmart,3.0,Starbucks,6.0
+24497,37.59855,-122.38719,Millbrae,CA,22795,No zoo found,1.0,Avenue Pet Salon,10.0,Starbucks,68.0
+24498,37.42827,-121.90662,Milpitas,CA,77604,Happy Hollow Park and Zoo,1.0,PetSmart,23.0,Starbucks,141.0
+24499,33.99251,-117.51644,Jurupa Valley,CA,21930,No zoo found,0.0,Petco,9.0,Starbucks,54.0
+24500,32.9156,-117.14392,Mira Mesa,CA,70000,No zoo found,0.0,Petco,25.0,Starbucks,85.0
+24501,37.75993,-122.41914,Mission District,CA,47234,Bison Paddock,2.0,Mr. Muggles' Dogs,40.0,Linea Cafe,273.0
+24502,33.60002,-117.672,Mission Viejo,CA,97156,Zoomars Petting Zoo,1.0,Petco,17.0,Starbucks,58.0
+24503,37.6391,-120.99688,Modesto,CA,211266,No zoo found,0.0,Tropical Haven,2.0,"heart +, soul",7.0
+24504,34.14806,-117.99895,Monrovia,CA,37463,No zoo found,0.0,HAPPY PAWS Dog Grooming,13.0,Monrovia Coffee Co,75.0
+24505,34.07751,-117.68978,Montclair,CA,38690,No zoo found,0.0,Jan's Tropical Fish,18.0,Starbucks,63.0
+24506,34.00946,-118.10535,Montebello,CA,63921,Montebello Barnyard Zoo,2.0,Petco,15.0,Starbucks,114.0
+24507,36.60024,-121.89468,Monterey,CA,28338,No zoo found,0.0,The Ultimate Aquarium,6.0,Cafe Lumiere,23.0
+24508,34.06251,-118.12285,Monterey Park,CA,61468,Montebello Barnyard Zoo,1.0,PetSmart,20.0,Starbucks,150.0
+24509,34.28556,-118.88204,Moorpark,CA,36104,America's Teaching Zoo,1.0,Kahoots,11.0,Starbucks,27.0
+24510,37.83493,-122.12969,Moraga,CA,17256,Oakland Zoo,1.0,Pet Food Express,29.0,Sì Sì Caffè,170.0
+24511,33.93752,-117.23059,Moreno Valley,CA,204198,giraffe,1.0,Petco,4.0,Pam's Donuts,30.0
+24512,37.1305,-121.65439,Morgan Hill,CA,42948,No zoo found,0.0,Canine Concepts,4.0,GVA Café,13.0
+24513,37.38605,-122.08385,Mountain View,CA,80435,Barron Park Donkeys,1.0,Critter Clippers,23.0,Starbucks,127.0
+24514,33.55391,-117.21392,Murrieta,CA,109830,Sugarplum Zoo,1.0,Petco,7.0,Starbucks,28.0
+24515,38.29714,-122.28553,Napa,CA,80434,No zoo found,0.0,Petco,2.0,Starbucks,18.0
+24516,32.67811,-117.0992,National City,CA,61060,San Diego Zoo,2.0,Petco,19.0,Starbucks,124.0
+24517,37.52966,-122.04024,Newark,CA,45336,Barron Park Donkeys,1.0,Bogie’s Discount Pet Food & Supply,14.0,Starbucks,74.0
+24518,33.61891,-117.92895,Newport Beach,CA,87127,Reptile Zoo,2.0,Aquatic Center,10.0,Herst Coffee Roasters,64.0
+24519,35.04275,-120.476,Nipomo,CA,16714,No zoo found,0.0,Petco,3.0,Starbucks,11.0
+24520,33.93113,-117.54866,Norco,CA,26289,No zoo found,0.0,Petco,6.0,Starbucks,41.0
+24521,38.68574,-121.37217,North Highlands,CA,42694,No zoo found,0.0,Petco,16.0,Starbucks,104.0
+24522,34.17223,-118.37897,North Hollywood,CA,77848,Los Angeles Zoo,2.0,Red Barn Pet Express,34.0,The Coffee Bean & Tea Leaf,187.0
+24523,34.22834,-118.53675,Northridge,CA,68469,Bison,1.0,PetSmart,23.0,Starbucks,55.0
+24524,33.90224,-118.08173,Norwalk,CA,107140,Parnell Storybook Zoo,2.0,Pet Shop,25.0,Starbucks,92.0
+24525,38.10742,-122.5697,Novato,CA,55530,No zoo found,0.0,Pet Food Express,8.0,Starbucks,13.0
+24526,37.76659,-120.84715,Oakdale,CA,22259,No zoo found,0.0,Petco,1.0,Starbucks,6.0
+24527,37.80437,-122.2708,Oakland,CA,419267,Oakland Zoo,1.0,Wag Hotel,44.0,Awaken Cafe,300.0
+24528,37.99742,-121.71245,Oakley,CA,39813,No zoo found,0.0,PetSmart,2.0,Starbucks,7.0
+24529,33.19587,-117.37948,Oceanside,CA,175691,No zoo found,0.0,Petco,5.0,seaborne coffee FTS,33.0
+24530,35.41968,-119.01955,Oildale,CA,32684,CALM - California Living Museum,1.0,Petco,2.0,Starbucks,10.0
+24531,34.06334,-117.65089,Ontario,CA,171214,No zoo found,0.0,Jan's Tropical Fish,18.0,Starbucks,56.0
+24532,33.78779,-117.85311,Orange,CA,140992,Santa Ana Zoo at Prentice Park,3.0,Super Pets,27.0,Starbucks,133.0
+24533,38.67851,-121.22578,Orangevale,CA,33960,Folsom City Zoo Sanctuary,1.0,The Serpentarium,15.0,Starbucks,70.0
+24534,34.86526,-120.436,Orcutt,CA,28905,No zoo found,0.0,PetSmart,2.0,Starbucks,7.0
+24535,37.87715,-122.17969,Orinda,CA,19279,Oakland Zoo,1.0,Pet Food Express,30.0,Starbucks,166.0
+24536,39.51394,-121.55776,Oroville,CA,16260,No zoo found,0.0,No BBQ found,0.0,No Light Rail found,0.0
+24537,34.1975,-119.17705,Oxnard,CA,207254,No zoo found,0.0,Pet Stop,1.0,Starbucks,17.0
+24538,37.61383,-122.48692,Pacifica,CA,39260,San Francisco Zoo,2.0,PetSmart,11.0,Starbucks,62.0
+24539,36.61774,-121.91662,Pacific Grove,CA,15674,No zoo found,0.0,The Ultimate Aquarium,6.0,P.G. Juice n' Java,23.0
+24540,33.72255,-116.37697,Palm Desert,CA,51869,The Living Desert,1.0,PetSmart,4.0,Starbucks,12.0
+24541,33.8303,-116.54529,Palm Springs,CA,47371,No zoo found,0.0,PetSmart,2.0,Coffe Bean and Tea Leaf,9.0
+24542,34.57943,-118.11646,Palmdale,CA,158351,No zoo found,0.0,Petco,5.0,Starbucks,22.0
+24543,37.44188,-122.14302,Palo Alto,CA,66853,Barron Park Donkeys,1.0,Pet Food Depot,17.0,Peet's Coffee,83.0
+24544,39.75961,-121.62192,Paradise,CA,26476,No zoo found,0.0,No BBQ found,0.0,Dutch Bro's Coffee,1.0
+24545,33.88946,-118.15979,Paramount,CA,55412,Montebello Barnyard Zoo,2.0,Pet Shop,27.0,Starbucks,95.0
+24546,36.61162,-119.52707,Parlier,CA,15138,No zoo found,0.0,No BBQ found,0.0,Starbucks,2.0
+24547,34.14778,-118.14452,Pasadena,CA,142250,Los Angeles Zoo,3.0,Pet Food Express,24.0,Starbucks,141.0
+24548,35.62664,-120.691,Paso Robles,CA,27157,No zoo found,0.0,Petco,1.0,Kreuzberg Coffee Company,10.0
+24549,37.4716,-121.12966,Patterson,CA,21498,No zoo found,0.0,No BBQ found,0.0,Starbucks,1.0
+24550,33.78252,-117.22865,Perris,CA,74971,No zoo found,0.0,Petco,4.0,Starbucks,8.0
+24551,38.23242,-122.63665,Petaluma,CA,60438,No zoo found,0.0,No BBQ found,6.0,Peet's Coffee,12.0
+24552,33.98307,-118.09673,Pico Rivera,CA,64218,Montebello Barnyard Zoo,2.0,PetSmart,12.0,Starbucks,73.0
+24553,38.00437,-122.29886,Pinole,CA,19269,Tava's Jungleland,1.0,Pet Food Express,11.0,East Bay Coffee Co.,76.0
+24554,38.02798,-121.88468,Pittsburg,CA,69424,No zoo found,0.0,Pet Food Express,5.0,Steeltown Coffee & Tea,17.0
+24555,33.87224,-117.87034,Placentia,CA,52495,Orange County Zoo,3.0,Petco,19.0,Jay's Coffee Waffles & More,99.0
+24556,37.94798,-122.0608,Pleasant Hill,CA,34810,No zoo found,0.0,Pet Food Express,12.0,Starbucks,55.0
+24557,37.66243,-121.87468,Pleasanton,CA,79510,No zoo found,0.0,Pet Food Express,12.0,Inklings,52.0
+24558,34.05529,-117.75228,Pomona,CA,153266,No zoo found,0.0,PetSmart,15.0,Starbucks,57.0
+24559,34.14778,-119.19511,Port Hueneme,CA,22423,No zoo found,0.0,No BBQ found,0.0,Starbucks,12.0
+24560,36.06523,-119.01677,Porterville,CA,56058,No zoo found,0.0,PetSmart,1.0,Starbucks,2.0
+24561,32.96282,-117.03586,Poway,CA,50157,San Diego Zoo Safari Park,1.0,The Buried Bone,15.0,Luckie Coffee,42.0
+24562,36.77579,-121.66967,Prunedale,CA,17560,No zoo found,0.0,PetSmart,2.0,Starbucks,10.0
+24563,33.04171,-116.86808,Ramona,CA,20292,San Diego Zoo Safari Park,1.0,Kahoots,1.0,Starbucks,3.0
+24564,38.58907,-121.30273,Rancho Cordova,CA,71017,Folsom City Zoo Sanctuary,1.0,PetSmart,9.0,Starbucks,77.0
+24565,34.1064,-117.59311,Rancho Cucamonga,CA,175236,No zoo found,0.0,Reptile Island,15.0,Starbucks,52.0
+24566,33.73974,-116.41279,Rancho Mirage,CA,18083,The Living Desert,1.0,PetSmart,3.0,Koffi,14.0
+24567,33.74446,-118.38702,Rancho Palos Verdes,CA,42732,No zoo found,0.0,Petco,15.0,Starbucks,56.0
+24568,32.95949,-117.11531,Rancho Penasquitos,CA,60000,No zoo found,0.0,Kahoots,19.0,Starbucks,69.0
+24569,32.74727,-116.9353,Rancho San Diego,CA,21208,No zoo found,0.0,Petco,11.0,No Light Rail found,51.0
+24570,33.64086,-117.6031,Rancho Santa Margarita,CA,49324,No zoo found,0.0,PetSmart,14.0,Starbucks,41.0
+24571,34.05557,-117.18254,Redlands,CA,71035,No zoo found,0.0,PetSmart,2.0,Molinos Coffee,24.0
+24572,33.84918,-118.38841,Redondo Beach,CA,68166,No zoo found,0.0,Centinela Feed & Pet Supplies,23.0,Starbucks,105.0
+24573,37.48522,-122.23635,Redwood City,CA,85288,Barron Park Donkeys,2.0,Pet Food Express,19.0,Peet's Coffee,79.0
+24574,36.59634,-119.4504,Reedley,CA,25569,No zoo found,0.0,No BBQ found,0.0,Starbucks,2.0
+24575,34.1064,-117.37032,Rialto,CA,103132,No zoo found,0.0,No BBQ found,0.0,Starbucks,36.0
+24576,37.93576,-122.34775,Richmond,CA,109708,No zoo found,0.0,Pet Food Express,21.0,Starbucks,122.0
+24577,35.62246,-117.6709,Ridgecrest,CA,28780,No zoo found,0.0,No BBQ found,0.0,Starbucks,2.0
+24578,38.69101,-121.44857,Rio Linda,CA,15106,No zoo found,0.0,Petco,10.0,Starbucks,91.0
+24579,37.74159,-121.12438,Ripon,CA,15151,No zoo found,0.0,PetSmart,4.0,Starbucks,12.0
+24580,37.73604,-120.93549,Riverbank,CA,24122,No zoo found,0.0,Petco,2.0,Starbucks,9.0
+24581,33.95335,-117.39616,Riverside,CA,322424,giraffe,1.0,Strickly Reptiles,6.0,Condron Coffee,37.0
+24582,38.79073,-121.23578,Rocklin,CA,61213,Folsom City Zoo Sanctuary,1.0,PetSmart,12.0,Starbucks,47.0
+24583,38.33964,-122.7011,Rohnert Park,CA,42407,No zoo found,0.0,Your Pets Market,7.0,Peet's Coffee,33.0
+24584,34.86414,-118.16341,Rosamond,CA,18150,No zoo found,0.0,No BBQ found,0.0,Sister Sister Coffee House,2.0
+24585,34.08057,-118.07285,Rosemead,CA,54908,Montebello Barnyard Zoo,1.0,PetSmart,13.0,Starbucks,87.0
+24586,38.55185,-121.36467,Rosemont,CA,22681,Sacramento Zoo,1.0,PetSmart,22.0,Starbucks,104.0
+24587,38.75212,-121.28801,Roseville,CA,130269,Folsom City Zoo Sanctuary,1.0,PetSmart,13.0,Fourscore Coffee House,62.0
+24588,33.97612,-117.90534,Rowland Heights,CA,48993,Parnell Storybook Zoo,1.0,Bubble Dog Pet Grooming,13.0,Starbucks,64.0
+24589,33.99613,-117.4056,Rubidoux,CA,34280,giraffe,1.0,Strickly Reptiles,6.0,Starbucks,49.0
+24590,38.58157,-121.4944,Sacramento,CA,490712,Sacramento Zoo,1.0,Allie's Paw Spa,14.0,Starbucks,89.0
+24591,36.67774,-121.6555,Salinas,CA,157380,Monterey Zoo,1.0,Jurassic Pets,2.0,Starbucks,12.0
+24592,34.10834,-117.28977,San Bernardino,CA,216108,No zoo found,0.0,PetSmart,2.0,Starbucks,41.0
+24593,37.63049,-122.41108,San Bruno,CA,43185,No zoo found,2.0,PetSmart,24.0,Starbucks,120.0
+24594,37.50716,-122.26052,San Carlos,CA,29931,No zoo found,2.0,Pet Food Express,16.0,Starbucks,78.0
+24595,33.42697,-117.61199,San Clemente,CA,65526,Zoomars Petting Zoo,1.0,Three Dog Bakery,8.0,Sur Coffee Cafe & Roastery,20.0
+24596,32.71571,-117.16472,San Diego,CA,1394928,San Diego Zoo,2.0,Bella Woof Spa,25.0,Starbucks,128.0
+24597,34.10668,-117.80673,San Dimas,CA,34630,No zoo found,0.0,PetSmart,15.0,Starbucks,54.0
+24598,34.28195,-118.43897,San Fernando,CA,24931,Wildlife Waystation (CLOSED),6.0,Pet Cuts,18.0,Starbucks,55.0
+24599,37.77493,-122.41942,San Francisco,CA,864816,Bison Paddock,2.0,Pet Food Express,45.0,Blue Bottle Coffee,281.0
+24600,34.09611,-118.10583,San Gabriel,CA,40424,Montebello Barnyard Zoo,1.0,PetSmart,19.0,Starbucks,133.0
+24601,33.78391,-116.95864,San Jacinto,CA,46951,No zoo found,0.0,Leila's Paws Pet Services,2.0,Starbucks,4.0
+24602,37.33939,-121.89496,San Jose,CA,1026908,Happy Hollow Park and Zoo,1.0,Biscuits,35.0,Voyager Craft Coffee,169.0
+24603,33.50169,-117.66255,San Juan Capistrano,CA,36454,Zoomars Petting Zoo,1.0,Pets Plus,16.0,Starbucks,42.0
+24604,37.72493,-122.15608,San Leandro,CA,90712,Oakland Zoo,1.0,Pet Food Express,16.0,Peet's Coffee,85.0
+24605,37.68104,-122.12441,San Lorenzo,CA,23452,Oakland Zoo,1.0,PetSmart,9.0,Starbucks,45.0
+24606,35.28275,-120.65962,San Luis Obispo,CA,47339,No zoo found,0.0,Tails,8.0,Blackhorse Espresso & Bakery - Uptown,20.0
+24607,33.14337,-117.16614,San Marcos,CA,92931,San Diego Zoo Safari Park,1.0,PetCoach,16.0,Starbucks,49.0
+24608,37.56299,-122.32553,San Mateo,CA,103536,No zoo found,1.0,Pet Food Express,12.0,Starbucks,65.0
+24609,37.96215,-122.34553,San Pablo,CA,30407,No zoo found,0.0,Pet Food Express,16.0,Catahoula Coffee,90.0
+24610,33.73585,-118.29229,San Pedro,CA,78405,No zoo found,0.0,Reptile Finders,24.0,Starbucks,62.0
+24611,37.97353,-122.53109,San Rafael,CA,59162,No zoo found,0.0,It's a Pet's World,10.0,Royal Ground Coffee,24.0
+24612,37.77993,-121.97802,San Ramon,CA,76134,Oakland Zoo,1.0,Petco,13.0,Starbucks,60.0
+24613,36.70801,-119.55597,Sanger,CA,24950,No zoo found,0.0,No BBQ found,0.0,Starbucks,3.0
+24614,33.74557,-117.86783,Santa Ana,CA,335400,Santa Ana Zoo at Prentice Park,3.0,PetSmart,24.0,Starbucks,140.0
+24615,34.42083,-119.69819,Santa Barbara,CA,91842,Santa Barbara Zoological Gardens,1.0,PetSmart,2.0,Starbucks,19.0
+24616,37.35411,-121.95524,Santa Clara,CA,126215,Happy Hollow Park and Zoo,1.0,Petco,40.0,Peet's Coffee,179.0
+24617,34.39166,-118.54259,Santa Clarita,CA,182371,Bison,5.0,PetSmart,4.0,Starbucks,31.0
+24618,36.97412,-122.0308,Santa Cruz,CA,64220,No zoo found,0.0,PetSmart,6.0,The Abbey,21.0
+24619,33.94724,-118.08535,Santa Fe Springs,CA,18026,Montebello Barnyard Zoo,2.0,PetSmart,15.0,Drinx,71.0
+24620,34.95303,-120.43572,Santa Maria,CA,105093,No zoo found,0.0,Petco,2.0,Starbucks,9.0
+24621,34.01949,-118.49138,Santa Monica,CA,93220,No zoo found,0.0,Healthy Spot,34.0,Philz Coffee,170.0
+24622,34.35417,-119.05927,Santa Paula,CA,30546,No zoo found,0.0,Pet Stop,1.0,Starbucks,5.0
+24623,38.44047,-122.71443,Santa Rosa,CA,174972,Safari West,1.0,Pet Club,6.0,Land and Water,28.0
+24624,32.83838,-116.97392,Santee,CA,57787,No zoo found,0.0,PetSmart,17.0,The Coffee Corner,57.0
+24625,37.26383,-122.02301,Saratoga,CA,30968,Happy Hollow Park and Zoo,1.0,Petco,32.0,Starbucks,133.0
+24626,33.74141,-118.10479,Seal Beach,CA,24619,Reptile Zoo,1.0,Petco,25.0,Starbucks,79.0
+24627,36.61107,-121.85162,Seaside,CA,33025,No zoo found,0.0,PetSmart,6.0,Starbucks,23.0
+24628,36.57078,-119.61208,Selma,CA,24414,No zoo found,0.0,No BBQ found,0.0,No Light Rail found,0.0
+24629,34.23639,-118.48472,North Hills,CA,56946,Bison,5.0,C & C Pet Food,27.0,Starbucks,69.0
+24630,35.50051,-119.27178,Shafter,CA,18336,No zoo found,0.0,No BBQ found,0.0,Starbucks,2.0
+24631,34.15112,-118.44925,Sherman Oaks,CA,52677,Los Angeles Zoo,2.0,Valley Dog Bakery,45.0,Starbucks,207.0
+24632,34.26945,-118.78148,Simi Valley,CA,126788,America's Teaching Zoo,1.0,PetSmart,10.0,Get Hooked Coffee & Bagels,23.0
+24633,36.42469,-121.32632,Soledad,CA,25003,No zoo found,0.0,No BBQ found,0.0,Starbucks,3.0
+24634,34.05195,-118.04673,South El Monte,CA,20878,Montebello Barnyard Zoo,2.0,PetSmart,15.0,Starbucks,83.0
+24635,33.95474,-118.21202,South Gate,CA,96401,Montebello Barnyard Zoo,1.0,Petco,20.0,Starbucks,124.0
+24636,38.93324,-119.98435,South Lake Tahoe,CA,21706,No zoo found,0.0,Pet Supermarket,1.0,Starbucks,5.0
+24637,34.11612,-118.15035,South Pasadena,CA,26151,Montebello Barnyard Zoo,3.0,Pet Food Express,24.0,Starbucks,160.0
+24638,37.65466,-122.40775,South San Francisco,CA,67271,No zoo found,3.0,PetSmart,35.0,Peet's Coffee,244.0
+24639,34.01279,-117.90478,South San Jose Hills,CA,20551,Parnell Storybook Zoo,1.0,Bubble Dog Pet Grooming,12.0,Starbucks,67.0
+24640,33.95015,-118.03917,South Whittier,CA,57156,Parnell Storybook Zoo,2.0,PetSmart,18.0,J. K. Donuts,74.0
+24641,39.11656,-121.63913,South Yuba City,CA,15217,No zoo found,0.0,PetSmart,2.0,Starbucks,4.0
+24642,32.74477,-116.99892,Spring Valley,CA,28205,San Diego Zoo,2.0,Beast Pets,21.0,Gladly Coffee,111.0
+24643,33.80252,-117.99312,Stanton,CA,38872,Reptile Zoo,3.0,Paws & Claws Grooming,36.0,Starbucks,146.0
+24644,37.9577,-121.29078,Stockton,CA,305658,Mike Grove Zoo,1.0,Carter's Pet Mart,5.0,Dutch Bros. Coffee,17.0
+24645,34.14862,-118.39647,Studio City,CA,34034,Los Angeles Zoo,2.0,Kriser's Natural Pet,39.0,The Coffee Bean & Tea Leaf,214.0
+24646,38.23825,-122.04024,Suisun,CA,28111,No zoo found,0.0,Petco,3.0,Starbucks,21.0
+24647,33.70919,-117.19726,Sun City,CA,19579,No zoo found,0.0,Petco,4.0,Starbucks,16.0
+24648,34.26695,-118.3023,Sunland,CA,15316,Wildlife Waystation (CLOSED),3.0,PetSmart,11.0,Starbucks,56.0
+24649,37.36883,-122.03635,Sunnyvale,CA,155805,Barron Park Donkeys,2.0,Petco,32.0,Starbucks,172.0
+24650,33.49364,-117.14836,Temecula,CA,110003,Sugarplum Zoo,1.0,Petco,7.0,Starbucks,24.0
+24651,34.10723,-118.05785,Temple City,CA,36365,Montebello Barnyard Zoo,1.0,Petco,13.0,Starbucks,80.0
+24652,34.17056,-118.83759,Thousand Oaks,CA,129339,America's Teaching Zoo,1.0,Aquatic Zoo Tropical Fish,10.0,Starbucks,24.0
+24653,33.83585,-118.34063,Torrance,CA,143592,No zoo found,0.0,PetSmart,23.0,Starbucks,103.0
+24654,37.73987,-121.42618,Tracy,CA,87075,No zoo found,0.0,PetSmart,2.0,Starbucks,10.0
+24655,39.32796,-120.18325,Truckee,CA,16299,No zoo found,0.0,Pet Station,1.0,Coffeebar Truckee,7.0
+24656,34.25223,-118.28841,Tujunga,CA,26527,Wildlife Waystation (CLOSED),3.0,PetSmart,10.0,Starbucks,63.0
+24657,36.20773,-119.34734,Tulare,CA,62315,No zoo found,0.0,No BBQ found,0.0,Starbucks,4.0
+24658,37.49466,-120.84659,Turlock,CA,72292,No zoo found,0.0,Petco,2.0,Starbucks,8.0
+24659,33.74585,-117.82617,Tustin,CA,80583,Santa Ana Zoo at Prentice Park,3.0,Petco,21.0,Kean Coffee,126.0
+24660,33.76446,-117.79394,North Tustin,CA,24917,Santa Ana Zoo at Prentice Park,2.0,Petco,20.0,Starbucks,114.0
+24661,34.13556,-116.05417,Twentynine Palms,CA,26025,No zoo found,0.0,No BBQ found,0.0,Starbucks,1.0
+24662,39.15017,-123.20778,Ukiah,CA,15917,No zoo found,0.0,Mendocino Barkery,1.0,Black Oak Coffee Roasters,3.0
+24663,37.59577,-122.01913,Union City,CA,74494,No zoo found,0.0,Bogie’s Discount Pet Food & Supply,11.0,Starbucks,49.0
+24664,34.1389,-118.35341,Universal City,CA,105000,Los Angeles Zoo,2.0,Unleashed,42.0,Starbucks,248.0
+24665,34.09751,-117.64839,Upland,CA,76443,No zoo found,0.0,Pet Supplies Plus,17.0,Starbucks,54.0
+24666,38.35658,-121.98774,Vacaville,CA,96803,No zoo found,0.0,Petco,3.0,Starbucks,20.0
+24667,34.44361,-118.60953,Valencia,CA,148456,Bison,5.0,Petco,3.0,Starbucks,23.0
+24668,34.04529,-117.94367,Valinda,CA,22822,Parnell Storybook Zoo,2.0,Petco,16.0,Starbucks,59.0
+24669,38.10409,-122.25664,Vallejo,CA,121692,Tava's Jungleland,1.0,Petco,3.0,Panama Bay Coffee Co.,25.0
+24670,34.18667,-118.44897,Van Nuys,CA,136443,Los Angeles Zoo,2.0,Petco,35.0,Starbucks,143.0
+24671,33.99084,-118.46008,Venice,CA,40885,No zoo found,0.0,Allan's Aquarium & Pet Center,36.0,Starbucks,199.0
+24672,34.27834,-119.29317,Ventura,CA,96769,No zoo found,0.0,Pet Stop,1.0,Palermo,11.0
+24673,34.53611,-117.29116,Victorville,CA,122225,No zoo found,0.0,Petco,6.0,Starbucks,12.0
+24674,34.50055,-118.11646,Vincent,CA,15922,No zoo found,0.0,Country Club Feed & Supply,4.0,Starbucks,10.0
+24675,36.33023,-119.29206,Visalia,CA,130104,No zoo found,0.0,No BBQ found,0.0,Starbucks,5.0
+24676,33.20004,-117.24254,Vista,CA,100890,No zoo found,0.0,Petco,9.0,Starbucks,47.0
+24677,34.02029,-117.86534,Walnut,CA,30237,Parnell Storybook Zoo,1.0,Bubble Dog Pet Grooming,15.0,Starbucks,67.0
+24678,37.90631,-122.06496,Walnut Creek,CA,68910,No zoo found,0.0,Petco,13.0,Starbucks,57.0
+24679,33.96807,-118.22507,Walnut Park,CA,15966,Montebello Barnyard Zoo,1.0,Petco,20.0,Starbucks,146.0
+24680,36.91023,-121.75689,Watsonville,CA,53628,No zoo found,0.0,No BBQ found,0.0,Starbucks,4.0
+24681,33.82168,-118.29257,West Carson,CA,21699,No zoo found,0.0,Ford's Feathers,35.0,Starbucks,117.0
+24682,34.06862,-117.93895,West Covina,CA,108484,Montebello Barnyard Zoo,2.0,Petco,15.0,Starbucks,58.0
+24683,34.09001,-118.36174,West Hollywood,CA,36222,Los Angeles Zoo,2.0,Orange Bone,48.0,Starbucks,292.0
+24684,34.05168,-117.9684,West Puente Valley,CA,22636,Montebello Barnyard Zoo,2.0,Petco,15.0,The Coffee Bean & Tea Leaf,66.0
+24685,38.58046,-121.53023,West Sacramento,CA,52721,Sacramento Zoo,1.0,Petco,14.0,Steamers,81.0
+24686,33.75918,-118.00673,Westminster,CA,92114,Reptile Zoo,2.0,Petco,30.0,Starbucks,132.0
+24687,33.9414,-118.3023,Westmont,CA,31853,No zoo found,0.0,Underwater World Enterprises,35.0,Starbucks,226.0
+24688,33.97918,-118.03284,Whittier,CA,87438,Parnell Storybook Zoo,2.0,PetSmart,13.0,J. K. Donuts,67.0
+24689,33.59891,-117.28004,Wildomar,CA,35632,No zoo found,0.0,Petco,6.0,Montague Brothers Coffee,22.0
+24690,33.91696,-118.25507,Willowbrook,CA,35983,No zoo found,0.0,PetSmart,35.0,Starbucks,173.0
+24691,38.54713,-122.81638,Windsor,CA,27464,Safari West,1.0,No BBQ found,2.0,Starbucks,21.0
+24692,32.83116,-116.93336,Winter Gardens,CA,20631,No zoo found,0.0,Petco,12.0,Kaffee Meister,39.0
+24693,38.67852,-121.7733,Woodland,CA,58567,No zoo found,0.0,Pet Extreme,3.0,Dutch Bros. Coffee,29.0
+24694,34.16834,-118.60592,Woodland Hills,CA,70000,No zoo found,0.0,Petco,21.0,Starbucks,47.0
+24695,33.88863,-117.81311,Yorba Linda,CA,67973,Orange County Zoo,1.0,Yorba Linda Feed Store,21.0,The Coffee Bean & Tea Leaf,91.0
+24696,39.14045,-121.61691,Yuba City,CA,66941,No zoo found,0.0,PetSmart,2.0,Starbucks,4.0
+24697,34.03363,-117.04309,Yucaipa,CA,53328,No zoo found,0.0,PetSmart,3.0,Starbucks,13.0
+24698,34.11417,-116.43224,Yucca Valley,CA,21600,No zoo found,0.0,Petco,2.0,Starbucks,1.0
+24770,35.222,-101.8313,Amarillo,TX,198645,Amarillo Zoo,1.0,Petco,3.0,Starbucks,11.0
+24771,32.2504,-101.47874,Big Spring,TX,28862,No zoo found,0.0,No BBQ found,0.0,Starbucks,1.0
+24772,29.36273,-100.89676,Del Rio,TX,36153,No zoo found,0.0,No BBQ found,0.0,Starbucks,1.0
+24773,35.86559,-101.97324,Dumas,TX,15001,No zoo found,0.0,No BBQ found,0.0,Starbucks,1.0
+24774,28.70914,-100.49952,Eagle Pass,TX,28765,No zoo found,0.0,No BBQ found,0.0,No Light Rail found,0.0
+24775,31.75872,-106.48693,El Paso,TX,681124,El Paso Zoo,1.0,El Centro,5.0,Starbucks,18.0
+24776,34.81521,-102.39932,Hereford,TX,15021,No zoo found,0.0,No BBQ found,0.0,No Light Rail found,0.0
+24777,31.69261,-106.20748,Horizon City,TX,19288,Recreativo San Jorge,1.0,PetSmart,2.0,Starbucks,8.0
+24778,33.57786,-101.85517,Lubbock,TX,249042,No zoo found,1.0,Merlin's Pet Shop,9.0,The Coffee Shop,16.0
+24779,31.99735,-102.07791,Midland,TX,132950,No zoo found,0.0,No BBQ found,2.0,Starbucks,3.0
+24780,31.84568,-102.36764,Odessa,TX,118968,No zoo found,0.0,Petco,1.0,Starbucks,3.0
+24781,35.53616,-100.95987,Pampa,TX,18177,No zoo found,0.0,No BBQ found,0.0,No Light Rail found,0.0
+24782,34.18479,-101.70684,Plainview,TX,20919,No zoo found,0.0,No BBQ found,0.0,No Light Rail found,0.0
+24783,31.46377,-100.43704,San Angelo,TX,100450,No zoo found,0.0,PetSmart,2.0,Starbucks,2.0
+24784,31.65456,-106.30331,Socorro,TX,33222,Recreativo San Jorge,1.0,PetSmart,3.0,Starbucks,16.0
+24785,31.63622,-106.29054,Socorro Mission Number 1 Colonia,TX,28637,Recreativo San Jorge,1.0,PetSmart,2.0,Starbucks,12.0
+24786,31.84235,-102.49876,West Odessa,TX,22707,No zoo found,0.0,No BBQ found,0.0,Starbucks,2.0
+24791,35.59412,-119.34095,Wasco,CA,26279,No zoo found,0.0,No BBQ found,0.0,Starbucks,1.0
+24798,40.86652,-124.08284,Arcata,CA,17843,Sequoia Park Zoo,1.0,Arcata Pet Supply,6.0,Northtown Coffee,14.0
+24799,40.84235,-124.06367,Bayside,CA,17132,Sequoia Park Zoo,1.0,Arcata Pet Supply,6.0,Beachcomber Cafe,14.0
+24800,40.80207,-124.16367,Eureka,CA,27017,Sequoia Park Zoo,1.0,Strictly for the Birds,5.0,Starbucks,13.0
+24801,40.94652,-124.10062,McKinleyville,CA,15177,No zoo found,0.0,A & L Feed and Pet Supply,2.0,Starbucks,4.0
+24802,40.58654,-122.39168,Redding,CA,91582,Turtle Bay Exploration Park,1.0,Petco,2.0,Dutch Bros. Coffee,21.0
+24803,40.41628,-120.65301,Susanville,CA,15247,No zoo found,0.0,Pet Station Susanville,1.0,Joe's,2.0
+25046,34.39048,-118.57372,Stevenson Ranch,CA,17557,Bison,5.0,PetSmart,5.0,Starbucks,30.0
+25052,38.46449,-121.34692,Vineyard,CA,24836,Sacramento Zoo,1.0,Petco,16.0,Starbucks,53.0
+25071,43.46004,-84.00674,Saginaw Township North,MI,24994,Children's Zoo at Celebration Square,1.0,PetSmart,2.0,Tim Hortons,8.0
+25072,42.56891,-83.38356,West Bloomfield Township,MI,64690,No zoo found,0.0,Premier Pet Supply,17.0,Tim Hortons,39.0
+25082,38.6025,-121.37854,Arden-Arcade,CA,92186,Sacramento Zoo,1.0,PetSmart,17.0,Starbucks,99.0
+25084,32.76397,-116.96877,Casa de Oro-Mount Helix,CA,18762,No zoo found,0.0,IB Pet,17.0,Starbucks,71.0
+25085,33.96772,-118.24438,Florence-Graham,CA,63387,Montebello Barnyard Zoo,1.0,Petco,29.0,Starbucks,189.0
+25086,31.13489,-97.77561,Fort Hood,TX,29589,No zoo found,0.0,The Pet Stop,2.0,Starbucks,5.0
+25088,34.23216,-118.23529,La Crescenta-Montrose,CA,19653,Los Angeles Zoo,3.0,PET grooming,13.0,Starbucks,89.0
+25093,34.09836,-117.92383,Vincent,CA,15922,No zoo found,0.0,Petco,14.0,Starbucks,58.0
+25094,33.976,-118.06909,West Whittier-Los Nietos,CA,25540,Montebello Barnyard Zoo,2.0,PetSmart,11.0,Starbucks,59.0
+25107,34.19731,-118.64398,West Hills,CA,41426,No zoo found,0.0,Petco,21.0,Starbucks,44.0
+25111,33.96358,-117.56418,Eastvale,CA,59039,No zoo found,0.0,PetSmart,9.0,Starbucks,49.0
+25122,37.75018,-122.43369,Noe Valley,CA,22893,Bison Paddock,2.0,Noe Valley Pet Company,39.0,Starbucks,258.0
+25123,37.71715,-122.40433,Visitacion Valley,CA,22534,San Francisco Zoo,3.0,Bernal Beast,39.0,Four Barrel Coffee,265.0
+25136,34.08668,-118.27023,Silver Lake,CA,32890,Los Angeles Zoo,2.0,Echo Bark,35.0,Alfred Coffee Silverlake,246.0
+25137,34.07808,-118.26066,Echo Park,CA,43832,Los Angeles Zoo,2.0,K9 Loft,34.0,Muddy Paw Coffee Company,237.0
+25141,34.18991,-118.44953,Valley Glen,CA,60000,Los Angeles Zoo,2.0,Petco,33.0,Starbucks,135.0
