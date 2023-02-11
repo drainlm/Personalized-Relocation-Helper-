@@ -6,29 +6,35 @@ Project Description/Outline: Relocation decision maker
 
 Research Questions to Answer:
 
-1. How does crime compare between Texas, California, Michigan?
-   a. Line Graph: showing violent crimes
-   b. Line Graph: showing property Crimes
-2. What points of interests (museum, coffee shops, BBQ) are in each state?
+1. How does crime compare between Texas, California, Michigan?a. Bar Chart: showing violent crimes 	b. Bar Chart: showing property Crimes 2018-2021
+2. What points of interests (zoos, pet shops, light rail) are in each state?
    a. Map
    b. Pie chart? Some other type of visualization.
 3. How do housing prices across Texas, California, Michigan?
-   a. Bar Chart: showing average housing prices in each state
+   a. Line Graph: showing average housing prices in each state 2018-2022
 4. How does violent crime compare with points of interest and housing prices?
-   a. Scatter Plot: comparing points of interest with violenct crime
-   b. Scatter Plot: comparing housing prices with property crime
+   for each state having a plot with a count of crime and count of housing prices
+   maybe a scatter plot for poi and crime, bar graph with overlay
+   housing and poi - line graph
+
+could do a stat significance test
+
+save images 
+
 
 Datasets to Be Used:
 
 Crime: FBI API [https://api.usa.gov/crime/fbi/cde/](https://api.usa.gov/crime/fbi/cde/) --[https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi)
 
-Points of Interest: Geoapify
+Points of Interest: Geoapify, GeonamesCache
 
 Housing Prices: [https://www.zillow.com/research/data/](https://www.zillow.com/research/data/)
 
-Lisa: Q2 Point of Interests
+Collaborators:
 
 Alejandra: Q1 Crime
+
+Lisa: Q2 Point of Interests
 
 Jason: Q3 Housing Prices
 
