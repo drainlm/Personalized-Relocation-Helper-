@@ -1,76 +1,51 @@
-# Project-one README
+# Personalized Relocation Helper README
 
-Team Members: Jason, Alejandra, Lisa
+Exploring Crime, Housing Prices, and Points of Interest (POI) )in 10 US States (California, Michigan, Texas, Colorado, North Carolina, Maine, Montana, Iowa, Oregon, Illinois)
 
-Project Description/Outline: Relocation decision maker
+## Overview
 
-Research Questions to Answer:
+This project analyzes crime data, housing prices, and points of interest (POI) data for 10 US States of Interest. The crime data includes violent, non-violent, and total crime for each state in 2018-20022. The housing prices data includes the median housing price for each state from 2018-2022. The POI data provides the number of nearby Planetariums, Dog Friendly places, and Vegan Food for citiesi in each state. 
 
-1. How does crime compare between Texas, California, Michigan?a. Bar Chart: showing violent crimes 	b. Bar Chart: showing property Crimes 2018-2021
-2. What points of interests (zoos, pet shops, light rail) are in each state?
-   a. Map
-   b. Pie chart? Some other type of visualization.
-3. How do housing prices across Texas, California, Michigan?
-   a. Line Graph: showing average housing prices in each state 2018-2022
-4. How does violent crime compare with points of interest and housing prices?
-   for each state having a plot with a count of crime and count of housing prices
-   maybe a scatter plot for poi and crime, bar graph with overlay
-   housing and poi - line graph
+## Dependencies
 
-could do a stat significance test
+* hvplot.pandas
+* pandas
+* requests
+* json
+* matplotlib.pyplot
+* matplotlib.ticker
+* geonamescache
+* API Keys for Geoapify and FBI CDE must be included in a config.py file
 
-save images 
+## Date Resources
+
+* Crime: [FBI CDE]([https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi))
+* Housing: [Zillow Research Data ](https://www.zillow.com/research/data/)
+* POI: [Geoapify](https://apidocs.geoapify.com/), [GeonamesCache](https://pypi.org/project/geonamescache/)
+
+## Data
+
+### Crime Data
+
+The crime data was obtained from the FBI Crime Data Explorer API. The API was used to retrieve the number of violent and non-violent crimes for each state from 2018-2021. The data was then transformed to include a Total Crimes column and was pivoted to show the number of crimes for each state and year.
+
+### Housing Prices
+
+The housing prices data was obtained from the Zillow Research website. The CSV file includes the median housing price for each state from 2010-2022. Data from 2010-2017 was removed, and only data from 2018-2022 was kept. The StateName column was also removed, and the RegionName column was renamed to State. The data was then filtered to include only the ten selected states, and the State column was converted to state abbreviations.
+
+### Points of Interest
+
+The points of interest data includes three categories: Planetariums, Dog Friendly Places, and Vegan Food places. The Geonamescache library was used to obtain a list of cities and states in the United States. The list was then filtered to include only cities in the ten selected states. The latitude and longitude of each city were then used to query the Geoapify API for the number and names of nearby Planetariums, Dog Friendly Places, and Vegan Food places.
+
+### Crime Data
 
 
-Datasets to Be Used:
+## File Descriptions
 
-Crime: FBI API [https://api.usa.gov/crime/fbi/cde/](https://api.usa.gov/crime/fbi/cde/) --[https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi)
+* `exploring_housing_prices.ipynb`: The Jupyter Notebook that contains the code for the project
+* `housing_prices_by_state.csv`: The CSV file that contains the housing prices data
+* `config.py`: A Python file that contains the Geoapify and Crime API keys
 
-Points of Interest: Geoapify, GeonamesCache
+## Usage
 
-Housing Prices: [https://www.zillow.com/research/data/](https://www.zillow.com/research/data/)
-
-Collaborators:
-
-Alejandra: Q1 Crime
-
-Lisa: Q2 Point of Interests
-
-Jason: Q3 Housing Prices
-
-### Requirements
-
-#### Completed Analysis Uploaded to GitHub (20 points)
-
-* Final data analysis contains ample and complete information in README file (10 points)
-* Final repository is acceptable for professional quality presentation (10 points)
-
-#### Visualizations (20 points)
-
-* 6–8 visualizations of data (at least two per question) (10 points)
-* Clear and accurate labeling of images (5 points)
-* Visualizations supported with ample and precise explanation (5 points)
-
-#### Analysis and Conclusion (20 points)
-
-* Write-up summarizes major findings and implications at a professional level (5 points)
-* Each question in the project proposal is answered with precise descriptions and findings (5 points)
-* Findings are strongly supported with numbers and visualizations (5 points)
-* Each question response is supported with a well-discerned
-  statistical analysis from lessons (e.g., aggregation, correlation,
-  comparison, summary statistics, sentiment analysis, and time series
-  analysis) (5 points)
-
-#### Group Presentation (20 points)
-
-* All group members spoke during the presentation (5 points)
-* Group was well prepared (5 points)
-* Presentation is relevant to material (5 points)
-* Presentation maintains audience interest (5 points)
-
-#### Slide Deck (20 points)
-
-* Slides are visually clean and professional (5 points)
-* Slides are relevant to material (5 points)
-* Slides effectively demonstrate the project (5 points)
-* Slides are clear and maintain audience interest (5 points)
+To use the project, simply run the `exploring_housing_prices.ipynb` notebook in a Jupyter Notebook environment. The notebook contains all the necessary code to analyze and visualize the data.
