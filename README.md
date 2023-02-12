@@ -2,33 +2,35 @@
 
 Team Members: Jason, Alejandra, Lisa
 
-Project Description/Outline: Comparing crime data in Texas
+Project Description/Outline: Relocation decision maker
 
 Research Questions to Answer:
 
-1. What is the overall crime rate trend in Texas compared to the national average?
+1. How does crime compare between Texas, California, Michigan?
+   a. Line Graph: showing violent crimes
+   b. Line Graph: showing property Crimes
+2. What points of interests (museum, coffee shops, BBQ) are in each state?
+   a. Map 
+   b. Pie chart? Some other type of visualization.
+3. How do housing prices across Texas, California, Michigan?
+   a. Bar Chart: showing average housing prices in each state
+4. How does violent crime compare with points of interest and housing prices?
+   a. Scatter Plot: comparing points of interest with violenct crime
+   b. Scatter Plot: comparing housing prices with property crime
 
-   a. How does the crime rate in major cities in Texas compare to each other?
-2. How does population density affect crime rates in major cities in Texas?
-3. Is there a correlation between poverty rate and crime rate in Texas' major cities?
-4. Are there any specific demographics that have a higher rate of being victims of crime in Texas' major cities?
-5. Or we could do a correlation like education or a silly correlation like ice cream sales or even UFO sightings *https://slate.com/news-and-politics/2013/07/warm-weather-homicide-rates-when-ice-cream-sales-rise-homicides-rise-coincidence.html
+Datasets to Be Used:
 
-Datasets to Be Used: FBI API https://api.usa.gov/crime/fbi/cde/
+Crime: FBI API https://api.usa.gov/crime/fbi/cde/ --https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi
 
--https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi
+Points of Interest: Geoapify
 
-Census Poverty: https://www.census.gov/data/developers/data-sets/Poverty-Statistics.html
+Housing Prices: https://www.zillow.com/research/data/
 
-Census Population: https://www.census.gov/data/developers/data-sets/popest-popproj/popest.html)
+Lisa: Q2 Point of Interests
 
-Rough Breakdown of Tasks:
+Alejandra: Q1 Crime
 
-Lisa: TBD
-
-Alejandra: TBD
-
-Jason: TBD
+Jason: Q3 Housing Prices
 
 ### Requirements
 
