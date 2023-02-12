@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Personalized Relocation Helper README
 
 #### Task List
@@ -8,8 +9,8 @@
 * [ ] Summary of Crime Visualization
 * [X] *Housing Visualization - multiple line graph comparing states
 * [ ] Summary of Housing Visualization
-* [ ] *POI Visualization - POI by Cities in States map
-* [ ] *POI Visualization - POI by States map
+* [X] *POI Visualization - POI by Cities in States map
+* [X] *POI Visualization - POI by States map
 * [ ] *POI Visualization - POI per capita
 * [ ] Summary of POI Visualization
 * [ ] *Comparing Crime and Housing Visualization
@@ -104,11 +105,24 @@ This project analyzes crime data, housing prices, and points of interest (POI) d
 
 ### Crime Data
 
-The crime data is collected using the [FBI Crime Data Explorer API]([https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi)). The API retrieved data on several types of crime where a charge was made in each state from 2018-2021. The types of crime were then sorted to violent and non-violent crimes and then totaled. This was then pivoted to more clearly display the data.
+The crime data is collected using the [FBI Crime Data Explorer API]([https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi)). The API retrieved data on several types of crime *where a charge was made* in each state from 2018-2021. The types of crime were then sorted to violent and non-violent* crimes and then totaled. This was then pivoted to more clearly display the data.
+
+*Note: While violent and non-violent crimes both have significant consequences to individuals and communities, violent crimes are considered more serious due to the physical harm caused, and therefore separate. 
+
+* Violent crime includes four offenses: Murder and Non-negligent 			 	Manslaughter, Rape, Robbery, and Aggravated Assault.
+* Non-violent crime includes All Other Offenses (Except Traffic), Arson, Burglary, Curfew and Loitering Law Violations, Disorderly Conduct, Driving Under the Influence, Drug Abuse Violations - Grand Total, Drunkenness,
+  Embezzlement, Forgery and Counterfeiting, Fraud, Gambling - Total, Human
+  Trafficking - Commercial Sex Acts, Human Trafficking - Involuntary
+  Servitude, Larceny - Theft, Liquor Laws, Manslaughter by Negligence,
+  Motor Vehicle Theft, Offenses Against the Family and Children,
+  Prostitution and Commercialized Vice, Stolen Property: Buying,
+  Receiving, Possessing, Suspicion, Vagrancy, Vandalism, Weapons:
+  Carrying, Possessing, Etc., Sex Offenses (Except Rape, and Prostitution
+  and Commercialized Vice), Simple Assault.
 
 ### Housing Prices
 
-The housing price data is collected from a csv file on the [Zillow Research Data](https://www.zillow.com/research/data/) website. The data was narrowed to only include 2018-2022 data for the 10 states of interest. Interpolate was used to get the average fo adjacent cells in a State row when there was an absent value. The median house price for each year by state was then calculated.
+The housing price data is collected from a csv file on the [Zillow Research Data](https://www.zillow.com/research/data/) website. The data was narrowed to only include 2018-2022 data for the 10 states of interest. Interpolate was used to get the average of adjacent cells in a State row when there was an absent value. The median house price for each year by state was then calculated.
 
 ### Points of Interest
 
@@ -141,3 +155,6 @@ The crime data and housing price data are compared by displaying the data in ***
 * Ideally, this project would have included the ability to more easily make selections for states of interest and points of interest to broaden its usefullness.
 * Current crime data is limited by state and is unavailable to be pulled by city without proper authorization. This limits the ability to zoom in on additional comparisons that could have otherwise been made.
 * As noted, the crime data includes crime where a charge was made. This does not include reported crimes or undocumented crimes.
+=======
+# Project-one
+>>>>>>> fb662dc195688faf9f123e8c2624787bd66407c9
