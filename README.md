@@ -2,6 +2,29 @@
 
 #### Task List
 
+Alejandra (Before Class):
+
+* [ ] Crime per capita dataframe - make sense of what values need to go in there
+* [ ] Subplot for horizontal stacked bar graphs
+* [ ] Summary of Crime findings
+* [ ] Presentation Slide Deck
+
+Lisa (Before Class):
+
+* [ ] POI per capita - make sense of values
+* [ ] Vizualize POI per capita
+* [ ] Summary of housing findings
+* [ ] Summary of POI findings
+
+Monday Class/After
+
+* [ ] Crime and Housing Visualization
+* [ ] Housing and POI Visualization
+* [ ] Summary of Comparative Visualizations
+* [ ] Save jpgs of visualizations
+* [ ] Maybe screen grab relevant code
+* [ ] Rehearse presentation
+
 **Things needing to be addressed:**
 
 * [ ] *Crime Visualization - subplotting horizontal stacked bar graph for each year
