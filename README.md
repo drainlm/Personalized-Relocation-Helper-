@@ -1,18 +1,49 @@
 # Personalized Relocation Helper README
 
-## To Do List
+#### Task List
+
+Alejandra (Before Class):
+
+* [ ] Crime per capita dataframe - make sense of what values need to go in there
+* [ ] Subplot for horizontal stacked bar graphs
+* [ ] Summary of Crime findings
+* [ ] Presentation Slide Deck
+
+Lisa (Before Class):
+
+* [ ] POI per capita - make sense of values
+* [ ] Vizualize POI per capita
+* [ ] Summary of housing findings
+* [ ] Summary of POI findings
+
+Monday Class/After
+
+* [ ] Crime and Housing Visualization
+* [ ] Housing and POI Visualization
+* [ ] Summary of Comparative Visualizations
+* [ ] Save jpgs of visualizations
+* [ ] Maybe screen grab relevant code
+* [ ] Rehearse presentation
+
+**Things needing to be addressed:**
 
 * [ ] *Crime Visualization - subplotting horizontal stacked bar graph for each year
 * [ ] Summary of Crime Visualization
 * [X] *Housing Visualization - multiple line graph comparing states
 * [ ] Summary of Housing Visualization
-* [ ] *POI Visualization - POI by Cities in States map
-* [ ] *POI Visualization - POI by States map
+* [X] *POI Visualization - POI by Cities in States map
+* [X] *POI Visualization - POI by States map
 * [ ] *POI Visualization - POI per capita
 * [ ] Summary of POI Visualization
 * [ ] *Comparing Crime and Housing Visualization
 * [ ] *Comparing Housing and POI Visualization
 * [ ] Summary of Comparative Visualizations
+
+**Things needing to be addressed:**
+
+* [ ] Crime needs to be adjusted per capita. When this is done, a note needs to be made above in the Crime Data section and then per capita also needs to be noted in the Crime Visualization section
+* [ ] Would like to ensure that the median is accurately captured, but for now we'll assume it is accurate.
+* [ ] Would like to remove duplicates in the POI. If unable to do so, a note may need to be made in the above sections and in the limitations section that the coumt for each POI is contingent the count per city and may not accurately represent the count per state.
 
 #### Presentation (7min, 3min for QnA)
 
@@ -96,53 +127,50 @@ This project analyzes crime data, housing prices, and points of interest (POI) d
 
 ### Crime Data
 
-The crime data is collected using the [FBI Crime Data Explorer API]([https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi)). The API retrieved data on several types of crime where a charge was made in each state from 2018-2021. The types of crime were then sorted to violent and non-violent crimes and then totaled. This was then pivoted to more clearly display the data.
+The crime data is collected using the [FBI Crime Data Explorer API]([https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi)). The API retrieved data on several types of crime *where a charge was made* in each state from 2018-2021. The types of crime were then sorted to violent and non-violent* crimes and then totaled. This was then pivoted to more clearly display the data.
+
+*Note: While violent and non-violent crimes both have significant consequences to individuals and communities, violent crimes are considered more serious due to the physical harm caused, and therefore separate.
+
+* Violent crime includes four offenses: Murder and Non-negligent 			 	Manslaughter, Rape, Robbery, and Aggravated Assault.
+* Non-violent crime includes All Other Offenses (Except Traffic), Arson, Burglary, Curfew and Loitering Law Violations, Disorderly Conduct, Driving Under the Influence, Drug Abuse Violations - Grand Total, Drunkenness,
+  Embezzlement, Forgery and Counterfeiting, Fraud, Gambling - Total, Human
+  Trafficking - Commercial Sex Acts, Human Trafficking - Involuntary
+  Servitude, Larceny - Theft, Liquor Laws, Manslaughter by Negligence,
+  Motor Vehicle Theft, Offenses Against the Family and Children,
+  Prostitution and Commercialized Vice, Stolen Property: Buying,
+  Receiving, Possessing, Suspicion, Vagrancy, Vandalism, Weapons:
+  Carrying, Possessing, Etc., Sex Offenses (Except Rape, and Prostitution
+  and Commercialized Vice), Simple Assault.
 
 ### Housing Prices
 
-The housing price data is collected from a csv file on the [Zillow Research Data](https://www.zillow.com/research/data/) website. The data was narrowed to only include 2018-2022 data for the 10 states of interest. The median house price for each year by state was then calculated.
+The housing price data is collected from a csv file on the [Zillow Research Data](https://www.zillow.com/research/data/) website. The data was narrowed to only include 2018-2022 data for the 10 states of interest. Interpolate was used to get the average of adjacent cells in a State row when there was an absent value. The median house price for each year by state was then calculated.
 
 ### Points of Interest
 
-Using [GeonamesCache](https://pypi.org/project/geonamescache/), a list of cities (pop. >15000) in each of the states of interest generates. Then, [Geoapify](https://apidocs.geoapify.com/) searches for Planetariums, places where dogs are allowed, and places where you can get vegan food within a 5 mile radius of each city.
+Using [GeonamesCache](https://pypi.org/project/geonamescache/), a list of cities (pop. >15000) in each of the states of interest generates. Then, [Geoapify](https://apidocs.geoapify.com/) searches for Planetariums, places where dogs are allowed, and places where you can get vegan food within a 5 mile radius of each city. These three variables were selected based on the idea of a demo client wanting to further narrow down their search for a place to relocate.
 
 ## Visualizations
 
 ### Visualizing Violent, Non-Violent, and Total Crime in States of Interest
 
-The crime data is visualized using subplot to display a horizontal bar chart referencing the violent, non-violent, and total crimes per state for the 2018-2021 timeframe.
+The crime data is visualized using subplot to display a horizontal bar chart referencing the violent, non-violent, and total crimes per state for the 2018-2021 timeframe. ****This shows that...*
 
 ### Visualizing Median Housing Prices in States of Interest
 
-The housing price data is visualized using a multiple line graph to display the median house prices per state for the 2018-2022 timeframe.
+The housing price data is visualized using a multiple line graph to display the median house prices per state for the 2018-2022 timeframe. ****This shows that...*
 
 ### Visualizing Points of Interest in States of Interest
 
-The points of interest data is displayed by using two maps and ****visualization_type.* The first map visualizes the number of POIs for each city in the states of interest. The second map visualizes the number of POIs for each state. The ****visualization_type* helps visualize the POIs taking the population in to consideration.
+The points of interest data is displayed by using two maps and ****visualization_type.* The first map visualizes the number of POIs for each city in the states of interest. The second map visualizes the number of POIs for each state. The ****visualization_type* helps visualize the POIs taking the population in to consideration. ****This shows that...*
 
 ### Visualizing How Crime and Housing Prices Compare
 
-The crime data and housing price data are compared by displaying the data in ****visualization_type*
+The crime data and housing price data are compared by displaying the data in ****visualization_type.* ****This shows that...*
 
 ### Visualizing Points of Interest and Housing Prices Compare
 
-The crime data and housing price data are compared by displaying the data in ****visualization_type*
-
-## Concerns
-
-### Crime
-
-Need to adjust per capita. If/when this is done, a note needs to be made above in the Crime Data section and then per capita also needs to be noted in the Crime Visualization section
-
-### Housing
-
-Would like to ensure that the median is accurately captured, but for now we'll assume it is accurate.
-
-We could also do a second visualization for the average housing prices... if needed and there is time
-
-### Points of Interest
-
-Would like to remove duplicates in the POI. If unable to do so, a note may need to be made in the above sections and in the limitations section that the count for each POI is contingent the count per city and may not accurately represent the count per state.
+The crime data and housing price data are compared by displaying the data in ****visualization_type. ***This shows that...*
 
 ## Limitations
 
