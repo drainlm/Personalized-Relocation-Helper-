@@ -1,92 +1,6 @@
 # Personalized Relocation Helper README
 
-#### Task List
-
-Project Description/Outline: Relocation decision maker
-Alejandra (Before Class):
-
-* [X] Crime per capita dataframe - make sense of what values need to go in there
-* [ ] Subplot for horizontal stacked bar graphs
-* [ ] Summary of Crime findings
-* [ ] Presentation Slide Deck
-
-1. How does crime compare between Texas, California, Michigan?
-   a. Line Graph: showing violent crimes
-   b. Line Graph: showing property Crimes
-2. What points of interests (museum, coffee shops, BBQ) are in each state?
-   a. Map 
-   b. Pie chart? Some other type of visualization.
-3. How do housing prices across Texas, California, Michigan?
-   a. Bar Chart: showing average housing prices in each state
-4. How does violent crime compare with points of interest and housing prices?
-   a. Scatter Plot: comparing points of interest with violenct crime
-   b. Scatter Plot: comparing housing prices with property crime
-
-Datasets to Be Used:
-
-Crime: FBI API https://api.usa.gov/crime/fbi/cde/ --https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi
-
-Points of Interest: Geoapify
-
-Housing Prices: https://www.zillow.com/research/data/
-
-Lisa: Q2 Point of Interests
-
-Alejandra: Q1 Crime
-
-Jason: Q3 Housing Prices
-
-* Use the Data section from the below README
-
-* [X] The approach that your group took to achieve the project goals:
-
-* Use Limitations secion from the below README
-
-* [X] The results/conclusions of the application or analysis:
-
-* Use saved png files to show visuzalizations
-* Use Visualizations section below
-* [X] Next steps: Briefly discuss potential next steps for the project.
-
-* This trial demo demonstrated how much further we would have to go to harness data. We've been exposed to a lot of new concepts, such as web scraping that could help in collecting more varied data. We've also recognized that even good data sets have their limitations, which sometimes aren't realized early enough. We'll be tabeling this project for now while our dedicated team learns more in a Data Bootcamp. Hopefully they'll come out of it with a better idea of how to approach and some day complete our Personalized Relocation Helper.
-
-#### Requirements Check
-
-* [ ] **Completed Analysis Uploaded to GitHub (20 points)**
-
-* [ ] Final data analysis contains ample and complete information in README file (10 points)
-* [ ] Final repository is acceptable for professional quality presentation (10 points)
-
-* [ ] **Visualizations (20 points)**
-
-* [ ] 6–8 visualizations of data (at least two per question) (10 points)
-* [ ] Clear and accurate labeling of images (5 points)
-* [ ] Visualizations supported with ample and precise explanation (5 points)
-
-* [ ] **Analysis and Conclusion (20 points)**
-
-* [ ] Write-up summarizes major findings and implications at a professional level (5 points)
-* [ ] Each question in the project proposal is answered with precise descriptions and findings (5 points)
-* [ ] Findings are strongly supported with numbers and visualizations (5 points)
-* [ ] Each question response is supported with a well-discerned statistical analysis from lessons (e.g., aggregation, correlation, comparison, summary statistics, sentiment analysis, and time series analysis) (5 points)
-
-* [ ] **Group Presentation (20 points)**
-
-* [ ] All group members spoke during the presentation (5 points)
-* [ ] Group was well prepared (5 points)
-* [ ] Presentation is relevant to material (5 points)
-* [ ] Presentation maintains audience interest (5 points)
-
-* [ ] **Slide Deck (20 points)**
-
-* [ ] Slides are visually clean and professional (5 points)
-* [ ] Slides are relevant to material (5 points)
-* [ ] Slides effectively demonstrate the project (5 points)
-* [ ] Slides are clear and maintain audience interest (5 points)
-
-## REMOVE THIS LINE AND EVERYTHING ABOVE BEFORE SUBMISSION
-
-Exploring Crime, Housing Prices, and Points of Interest (POI) )in 10 US States (California, Michigan, Texas, Colorado, North Carolina, Maine, Montana, Iowa, Oregon, Illinois)
+Exploring Crime, Housing Prices, and Points of Interest (POI) )in 10 US States (California, Michigan, Texas, Colorado, North Carolina, Maine, Montana, Iowa, Oregon, Illinois) in order to help a demo client find the best suited states for their concerns and interests.
 
 ## Overview
 
@@ -101,6 +15,7 @@ This project analyzes crime data, housing prices, and points of interest (POI) d
 * matplotlib.pyplot
 * matplotlib.ticker
 * geonamescache
+* ssl
 * API Keys for Geoapify and FBI CDE must be included in a config.py file
 
 ## Data
@@ -109,18 +24,10 @@ This project analyzes crime data, housing prices, and points of interest (POI) d
 
 The crime data is collected using the [FBI Crime Data Explorer API]([https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi)). The API retrieved data on several types of crime *where a charge was made* in each state from 2018-2021 and that was then reported with the Uniform Crime Reporting Program. The types of crime were then sorted to violent and non-violent* crimes and then totaled. This was then pivoted to more clearly display the data. Additionally, the Wikipedia [List of U.S. states and territories by population ](https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_population)site is used to read into a table to collect the most recent (July 1, 2022 est.) population for each of the States of interest. The population for each state is captured on a DataFrame and then merged with the crime pivot DataFrame. The data is then adjusted per capita (100,000) to provide a more accurate comparison between states regardless of their population size, which eases the bias towards more populous states.
 
-*Note: While violent and non-violent crimes both have significant consequences to individuals and communities, violent crimes are considered more serious due to the physical harm caused, and therefore separate. 
+*Note: While violent and non-violent crimes both have significant consequences to individuals and communities, violent crimes are considered more serious due to the physical harm caused, and therefore separate.
 
-* Violent crime includes four offenses: Murder and Non-negligent 			 	Manslaughter, Rape, Robbery, and Aggravated Assault.
-* Non-violent crime includes All Other Offenses (Except Traffic), Arson, Burglary, Curfew and Loitering Law Violations, Disorderly Conduct, Driving Under the Influence, Drug Abuse Violations - Grand Total, Drunkenness,
-  Embezzlement, Forgery and Counterfeiting, Fraud, Gambling - Total, Human
-  Trafficking - Commercial Sex Acts, Human Trafficking - Involuntary
-  Servitude, Larceny - Theft, Liquor Laws, Manslaughter by Negligence,
-  Motor Vehicle Theft, Offenses Against the Family and Children,
-  Prostitution and Commercialized Vice, Stolen Property: Buying,
-  Receiving, Possessing, Suspicion, Vagrancy, Vandalism, Weapons:
-  Carrying, Possessing, Etc., Sex Offenses (Except Rape, and Prostitution
-  and Commercialized Vice), Simple Assault.
+* Violent crime includes four offenses: Murder and Non-negligent Manslaughter, Rape, Robbery, and Aggravated Assault.
+* Non-violent crime includes All Other Offenses (Except Traffic), Arson, Burglary, Curfew and Loitering Law Violations, Disorderly Conduct, Driving Under the Influence, Drug Abuse Violations - Grand Total, Drunkenness, Embezzlement, Forgery and Counterfeiting, Fraud, Gambling - Total, Human Trafficking - Commercial Sex Acts, Human Trafficking - Involuntary Servitude, Larceny - Theft, Liquor Laws, Manslaughter by Negligence, Motor Vehicle Theft, Offenses Against the Family and Children, Prostitution and Commercialized Vice, Stolen Property: Buying, Receiving, Possessing, Suspicion, Vagrancy, Vandalism, Weapons: Carrying, Possessing, Etc., Sex Offenses (Except Rape, and Prostitution and Commercialized Vice), Simple Assault.
 
 ### Housing Prices
 
@@ -137,12 +44,13 @@ Using [GeonamesCache](https://pypi.org/project/geonamescache/), a list of cities
 1. How does violent, non-violent, and total crime compare across 2018-2021 for our States of Interest?
    The total number of crimes has decreased from 2018 to 2021 in most states. Some states have vastly different crimes rates (that were reported and recorded, see caveat!). Here are two visualizations to show that:
 
-   *insert horizontal stacked bar graph
-   *The subplot of horizontal stacked bar graphs visualizes the comparison of violent, non-violent, and total crimes per state in each year (2018, 2019, 2020, 2021)
+   ![1676344876530](image/README/1676344876530.png)
 
-   *insert visualization_type
+   *The box plot shows there are some outliers for total crime in 2018-2021 per capita (100,000). Illinois is an outlier for each year with significantly fewer reported crimes, and when inspecting the provided data set from the FBI we found low law enforcement participation in reporting for Illinois. California is also in the bottom quartile for 2021, which is a year where they had a huge drop in reporting agencies as well. We also have Colorado as an outlier in 2018, where there were far more crimes reported and it's unclear why this may be.
 
-   *The visualization_type shows...
+   ![1676344896295](image/README/1676344896295.png)
+
+   ![1676346373239](image/README/1676346373239.png)![1676346378955](image/README/1676346378955.png)![1676346386695](image/README/1676346386695.png)*The horizontal stacked bar graphs visualizes the comparison of violent, non-violent, and total crimes per state in each year (2018, 2019, 2020, 2021)
 
 ### Visualizing Median Housing Prices in States of Interest
 
@@ -152,7 +60,9 @@ Using [GeonamesCache](https://pypi.org/project/geonamescache/), a list of cities
 ![1676260226494](image/README/1676260226494.png)
 The multiple line graph visualizes the prices of homes over time with lines representing each state.
 
-![1676267270481](image/README/1676267270481.png)The scatter plot visualizes the prices of homes by state with the data points representing each year (2018-2022).
+![1676267270481](image/README/1676267270481.png)
+
+The scatter plot visualizes the prices of homes by state with the data points representing each year (2018-2022).
 
 ### Visualizing Points of Interest in States of Interest
 
@@ -170,7 +80,7 @@ The multiple line graph visualizes the prices of homes over time with lines repr
 
       ![1676267022231](image/README/1676267022231.png)
 
-   The above subplot of piecharts visualizes how states compare based on each POI.
+   The above subplot of piecharts visualizes how states compare based on each POI based on each POI oriented by time.
    ![1676267049928](image/README/1676267049928.png)
 
    The above grouped barchart is another way to visualize how states compare based on each POI.
@@ -183,9 +93,3 @@ The multiple line graph visualizes the prices of homes over time with lines repr
 * Not all law enforcement agencies provide data or do so timely. This is particularly noteworthy in the case of IL, which only had 328 out of 934 reporting law enforcement agencies in the year 2021 compared to TX having 1006 out of 1,197 agencies reporting.
   * In the case that there is missing data, the FBI reports using estimates based on any reported data they receive as long as it is between 3-11 months of data. If nothing is received, the FBI estimates by using known crime figures of similar areas within the state. There is a concern there may be a deeper discrepancy in the data than is currently realized.
 * There are some duplicated POIs due to the radius overlapping at times between cities and counting some POI more than once. Unfortunately, this could not be resolved in time for submission of the project.
-* No statistical analysis testing was able to be completed during the course of this project, though steps were taken to attempt to ensure solid data sources were obtained and methods to exclude absent data appropriately were used.
-
-## Collaborators
-
-* Lisa Drain
-* Alejandra Gomez
