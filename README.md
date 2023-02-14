@@ -12,6 +12,7 @@ This project analyzes crime data, housing prices, and points of interest (POI) d
 * pandas
 * requests
 * json
+* numpy
 * matplotlib.pyplot
 * matplotlib.ticker
 * geonamescache
@@ -84,6 +85,21 @@ The scatter plot visualizes the prices of homes by state with the data points re
    ![1676267049928](image/README/1676267049928.png)
 
    The above grouped barchart is another way to visualize how states compare based on each POI.
+
+### Comparative Visualizations
+
+1. How can our demo client compare across these points of data?
+   For our demo client to better visualize comparisons between the Crime, Housing, and POI data, we created three scatter plots.
+
+   ![1676352891061](image/README/1676352891061.png)
+
+   The above scatter plot is comparing the most recent data for Crime (2021) and Median Housing Prices (2022) by State of Interest
+
+   ![1676352899848](image/README/1676352899848.png)
+
+   The above scatter plot is comparing the most recent data fro Median Housing Prices (2022) and POI by State of Interest
+
+   ![1676352909165](image/README/1676352909165.png)The above scatter plot is comparing the most recent data for Crime (2021) and POI by State of Interest
 
 ## Limitations
 
