@@ -95,7 +95,7 @@ The scatter plot visualizes the prices of homes by state with the data points re
 
    The above scatter plot is comparing the most recent data for Crime (2021) and Median Housing Prices (2022) by State of Interest
 
-   ![1676352899848](image/README/1676352899848.png)
+   ![1676507767959](image/README/1676507767959.png)
 
    The above scatter plot is comparing the most recent data fro Median Housing Prices (2022) and POI by State of Interest
 
